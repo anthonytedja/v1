@@ -1,1 +1,71 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Anthony Tedja">
+  <meta name="keywords" content="Anthony Tedja, Tedja">
+  <meta name="description" content="Personal Webpage">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Anthony Tedja</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js"></script>
+</head>
+
+<body>
+  <div id="sidebar">
+    <div class="toggle-btn" onclick="openSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li onclick="showHome()">home</li>
+      <li onclick="showAbout()">about</li>
+      <li href="#" onclick='window.open("resume.pdf");return false;'>resume</li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <div id="maincube"></div>
+    <div class="typewriter">
+      <h1>@anthonytedja</h1>
+    </div>
+    
+    <br><br><br>
+    <p id="name">
+      <span hover-name="Please get out  >:(">Welcome to my room :)</span>
+    </p>
+    <br>
+    <a href="mailto:anthonytedja27@gmail.com">
+      <i class="fa fa-envelope-o fa-lg"></i>
+    </a>
+    <a href="https://github.com/anthonytedja">
+      <i class="fa fa-github fa-lg"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/anthonytedja/">
+      <i class="fa fa-linkedin-square fa-lg"></i>
+    </a>
+    <a href="https://www.instagram.com/anthonytedja">
+      <i class="fa fa-instagram fa-lg"></i>
+    </a>
+  </div>
+
+  <div id="about">
+    <br>
+    <div class="typewriter">
+      <h1>all about me.</h1>
+    </div>
+    <p>Pokemon Master.</p> <br>
+    <p>Mother of 3.</p> <br>
+    <p>Ameteur Human.</p> <br>
+    <p>Sleep Enthusiast.</p> <br>
+    <div id="v1"></div>
+    <div id="aboutcube"></div>
+  </div>
+
+</body>
+
+</html>

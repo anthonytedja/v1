@@ -1,0 +1,201 @@
+*{
+    margin:0px;
+    padding:0px;
+    color: black;
+    font-family: "Verdana", sans-serif;
+  }
+  body{
+    background-color:#FFFFFF;
+  }
+
+  #maincube {
+    border-radius: 20px;
+    position:relative;
+    width: 260px;
+    height: 100px;
+    top: 50px;
+    left: -50px;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    z-index: -1;
+  }
+  #aboutcube {
+    border-radius: 20px;
+    position:relative;
+    width: 260px;
+    height: 275px;
+    top: -350px;
+    left: 375px;
+    background: #9ec09e;
+    z-index: -1;
+  }
+  #sidebar {
+    border-radius: 20px;
+    text-align: center;
+    position:fixed;
+    width: 150px;
+    height:150px;
+    margin: 200px auto;
+    background: #f5bba9;
+    left:-200px;
+    transition: 0.5s;
+  }
+  #sidebar.active{
+    left:50px;
+  }
+  #sidebar ul{
+    margin-top: 0cm;
+  }
+  #sidebar ul li{
+    top: 200px;
+    color:white;
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ffffff;
+  }
+  #sidebar ul li:hover{
+    color: lightgoldenrodyellow;
+  }
+
+  #sidebar .toggle-btn{
+    position:absolute;
+    left:220px;
+    top:20px;
+  }
+  #sidebar .toggle-btn span {
+    display:block;
+    width:27.5px;
+    height:4px;
+    background: black;
+    margin: 5px 0px;
+  }
+
+  #main {
+    position:absolute;
+    left: 200px;
+    top: 400px;
+    color:#f5bba9;
+    transition: 0.5s;
+    animation: fadein 2s;
+  }
+
+  #main.active{
+    left:400px;
+  }
+
+  #name{
+    font-size: 20px;
+  }
+
+  #name span:hover{
+    font-size: 0;
+    color:#fd3b00;
+  }
+
+  #name span:hover:after{
+    content: attr(hover-name);
+    font-size: 20px;
+  }
+
+  #main a i{
+    margin-top: 5px;
+    margin-right: 6px;
+    position: relative;
+    float: left;
+  }
+
+  #main a i:hover{
+    opacity: 0.3;
+    transition: 0.2s;
+  }  
+
+  #main p{
+    padding-bottom: 7.5px;
+  }
+
+  #about{
+    display: none;
+    animation: fadein 2s;
+    position:absolute;
+    left: 200px;
+    top: 450px;
+    color:#f5bba9;
+    transition: 0.5s;
+    font-size: large;
+  } 
+
+  #about.active{
+    left: 400px;
+  }
+
+  #about p{
+    position: relative;
+    left: 400px;
+    top: -100px;
+    padding-bottom: 5px;
+    color: white;
+  }
+
+  #v1{
+    border-left: 5px solid #afbedd;
+    height: 500px;
+    position: absolute;
+    top: -200px;
+    left: 325px;
+  }
+
+  /*https://css-tricks.com/snippets/css/typewriter-effect/*/
+
+  .typewriter h1 {
+    font-family: "Arial", sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .05em; /* Adjust as needed */
+    animation:
+      typing 1.5s steps(40, end), /*2 is the type speed*/
+      blink-caret 1s step-end infinite; /*1 is the blink speed*/
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+  /*https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load*/
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
