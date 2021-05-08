@@ -22,7 +22,7 @@
     border-radius: 20px;
     position:relative;
     width: 260px;
-    height: 275px;
+    height: 300px;
     top: -350px;
     left: 375px;
     background: #9ec09e;
@@ -37,13 +37,14 @@
     margin: 200px auto;
     background: #f5bba9;
     left:-200px;
+    top: -100px;
     transition: 0.5s;
   }
   #sidebar.active{
     left:50px;
   }
   #sidebar ul{
-    margin-top: 0cm;
+    margin-top: 0px;
   }
   #sidebar ul li{
     top: 200px;
@@ -72,7 +73,7 @@
   #main {
     position:absolute;
     left: 200px;
-    top: 400px;
+    top: 200px;
     color:#f5bba9;
     transition: 0.5s;
     animation: fadein 2s;
@@ -117,7 +118,7 @@
     animation: fadein 2s;
     position:absolute;
     left: 200px;
-    top: 450px;
+    top: 250px;
     color:#f5bba9;
     transition: 0.5s;
     font-size: large;
@@ -133,14 +134,6 @@
     top: -100px;
     padding-bottom: 5px;
     color: white;
-  }
-
-  #v1{
-    border-left: 5px solid #afbedd;
-    height: 500px;
-    position: absolute;
-    top: -200px;
-    left: 325px;
   }
 
   /*https://css-tricks.com/snippets/css/typewriter-effect/*/
