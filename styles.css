@@ -21,7 +21,7 @@
   #aboutcube {
     border-radius: 20px;
     position:relative;
-    width: 260px;
+    width: 275px;
     height: 300px;
     top: -350px;
     left: 375px;
@@ -132,8 +132,18 @@
     position: relative;
     left: 400px;
     top: -100px;
-    padding-bottom: 5px;
-    color: white;
+  }
+
+  span.after{
+    display:none;
+  }
+
+  #about p:hover span.before{
+    display:none;
+  }
+
+  #about p:hover span.after{
+    display:block;
   }
 
   /*https://css-tricks.com/snippets/css/typewriter-effect/*/
