@@ -5,6 +5,11 @@
     font-family: "Verdana", sans-serif;
     box-sizing: border-box;
   }
+
+  ::-webkit-scrollbar {
+    display: none;
+    }
+
   body{
     background-color:#FFFFFF;
   }

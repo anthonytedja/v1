@@ -1,24 +1,3 @@
-function hide() {
-  document.getElementById("main").style.display = "none";
-  document.getElementById("about").style.display = "none";
-}
-
-function showHome() {
-  hide();
-  document.getElementById("main").style.display = "block";
-}
-
-function showAbout() {
-  hide();
-  document.getElementById("about").style.display = "block";
-}
-
-function openSidebar() {
-  document.getElementById("sidebar").classList.toggle('active');
-  document.getElementById("main").classList.toggle('active');
-  document.getElementById("about").classList.toggle('active');
-}
-
 var canvasDots = function () {
   var canvas = document.querySelector('canvas'),
     ctx = canvas.getContext('2d'),
@@ -125,3 +104,24 @@ var canvasDots = function () {
 window.onload = function () {
   canvasDots();
 };
+
+function hide() {
+  document.getElementById("main").style.display = "none";
+  document.getElementById("about").style.display = "none";
+}
+
+function showHome() {
+  hide();
+  document.getElementById("main").style.display = "block";
+}
+
+function showAbout() {
+  hide();
+  document.getElementById("about").style.display = "block";
+}
+
+function openSidebar() {
+  document.getElementById("sidebar").classList.toggle('active');
+  document.getElementById("main").classList.toggle('active');
+  document.getElementById("about").classList.toggle('active');
+}
