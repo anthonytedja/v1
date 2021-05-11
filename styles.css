@@ -3,6 +3,7 @@
     padding:0px;
     color: black;
     font-family: "Verdana", sans-serif;
+    box-sizing: border-box;
   }
   body{
     background-color:#FFFFFF;
@@ -39,6 +40,7 @@
     left:-200px;
     top: -100px;
     transition: 0.5s;
+    z-index: 1;
   }
   #sidebar.active{
     left:50px;
@@ -77,6 +79,7 @@
     color:#f5bba9;
     transition: 0.5s;
     animation: fadein 2s;
+    z-index: 1;
   }
 
   #main.active{
@@ -85,6 +88,7 @@
 
   #name{
     font-size: 20px;
+    z-index: 1;
   }
 
   #name span:hover{
@@ -122,6 +126,7 @@
     color:#f5bba9;
     transition: 0.5s;
     font-size: large;
+    z-index: 1;
   } 
 
   #about.active{
@@ -132,6 +137,7 @@
     position: relative;
     left: 400px;
     top: -100px;
+    z-index: 1;
   }
 
   span.after{
@@ -201,4 +207,18 @@
 @-o-keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+/*https://codepen.io/MathiasBerwig/pen/GopGVq*/
+
+canvas {
+  background: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -5;
 }
