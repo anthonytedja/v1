@@ -1,14 +1,12 @@
 var canvasDots = function () {
   var canvas = document.querySelector('canvas'),
-    ctx = canvas.getContext('2d'),
-    colorDot = '#f5bba9',
-    color = '#CECECE';
+    ctx = canvas.getContext('2d');
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   canvas.style.display = 'block';
-  ctx.fillStyle = colorDot;
+  ctx.fillStyle = '#F5BBA9';
   ctx.lineWidth = .3;
-  ctx.strokeStyle = color;
+  ctx.strokeStyle = '#CECECE';
 
   var mousePosition = {
     x: 30 * canvas.width / 100,
@@ -16,7 +14,7 @@ var canvasDots = function () {
   };
 
   var dots = {
-    nb: canvas.width / 2,
+    count: canvas.width / 2,
     distance: 50,
     d_radius: 100,
     array: []
@@ -25,10 +23,8 @@ var canvasDots = function () {
   function Dot() {
     this.x = Math.random() * canvas.width;
     this.y = Math.random() * canvas.height;
-
     this.vx = -.5 + Math.random();
     this.vy = -.5 + Math.random();
-
     this.radius = Math.random();
   }
 
@@ -40,17 +36,14 @@ var canvasDots = function () {
     },
 
     animate: function () {
-      for (i = 0; i < dots.nb; i++) {
-
+      for (i = 0; i < dots.count; i++) {
         var dot = dots.array[i];
 
         if (dot.y < 0 || dot.y > canvas.height) {
-          dot.vx = dot.vx;
           dot.vy = - dot.vy;
         }
         else if (dot.x < 0 || dot.x > canvas.width) {
           dot.vx = - dot.vx;
-          dot.vy = dot.vy;
         }
         dot.x += dot.vx;
         dot.y += dot.vy;
@@ -58,10 +51,11 @@ var canvasDots = function () {
     },
 
     line: function () {
-      for (i = 0; i < dots.nb; i++) {
-        for (j = 0; j < dots.nb; j++) {
+      for (i = 0; i < dots.count; i++) {
+        for (j = 0; j < dots.count; j++) {
           i_dot = dots.array[i];
           j_dot = dots.array[j];
+
 
           if ((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > - dots.distance && (i_dot.y - j_dot.y) > - dots.distance) {
             if ((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > - dots.d_radius && (i_dot.y - mousePosition.y) > - dots.d_radius) {
@@ -79,7 +73,7 @@ var canvasDots = function () {
 
   function createDots() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (i = 0; i < dots.nb; i++) {
+    for (i = 0; i < dots.count; i++) {
       dots.array.push(new Dot());
       dot = dots.array[i];
 
