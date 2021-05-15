@@ -33,7 +33,7 @@
     top: 50px;
     left: -50px;
     background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
-    z-index: -1;
+    z-index: -2;
   }
   #aboutcube {
     border-radius: 20px;
@@ -74,6 +74,8 @@
   }
   #sidebar ul li:hover{
     color: lightgoldenrodyellow;
+    opacity: 0.5;
+    transition: 0.2s;
   }
 
   #sidebar .toggle-btn{
@@ -120,6 +122,7 @@
   }
 
   #main a i{
+    color: black;
     margin-top: 5px;
     margin-right: 6px;
     position: relative;
@@ -129,7 +132,7 @@
   #main a i:hover{
     opacity: 0.3;
     transition: 0.2s;
-  }  
+  }
 
   #main p{
     padding-bottom: 7.5px;
@@ -174,6 +177,7 @@
 
   .typewriter h1 {
     font-family: "Arial", sans-serif;
+    color: black;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid black; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -194,6 +198,11 @@
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: black; }
+  }
+
+  @keyframes blink-caret-white {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
   }
 
   /*https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load*/
@@ -240,6 +249,8 @@ canvas {
   z-index: -5;
 }
 
+/*https://dribbble.com/shots/5041745-Switcher*/
+
 /* a background used instead of body to change background color */
 .background {
 	position: absolute;
@@ -285,17 +296,60 @@ label {
 }
 
 /* label rotates clockwise */
-input:checked + label {
+input:checked ~ label {
 	transform: rotate(180deg);
 }
 
 /* dummy switch goes anti-clockwise */
 input:checked ~ .s {
 	transform: rotate(-180deg);
-	background: #2F3437;
+	background: #ce4141;
 }
 
 /* can't change the body here so this is why background was created */
 input:checked ~ .background {
 	background: #2F3437;
+}
+
+input:checked ~ #sidebar ul li {
+  transition: 0.5s;
+	border-bottom: 1px solid #2F3437;
+}
+
+input:checked ~ div #maincube {
+  background: linear-gradient(-35deg, #c09999, #9bc2c2);
+}
+
+input:checked ~ #main .typewriter h1 {
+  animation:
+      typing 1.5s steps(40, end), /*2 is the type speed*/
+      blink-caret-white 1s step-end infinite; /*1 is the blink speed*/
+}
+
+input:checked ~ #about .typewriter h1 {
+  animation:
+      typing 1.5s steps(40, end), /*2 is the type speed*/
+      blink-caret-white 1s step-end infinite; /*1 is the blink speed*/
+}
+
+input:checked ~ #sidebar .toggle-btn span {
+  transition: 0.5s;
+  background: white;
+}
+
+input:checked ~ #main .typewriter h1 {
+  color: white;
+}
+
+input:checked ~ #about .typewriter h1 {
+  color: white;
+}
+
+input:checked ~ #main p span {
+  color: white;
+}
+
+input:checked ~ #main a i {
+  transition: 0.5s;
+  color: white;
 }
