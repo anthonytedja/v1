@@ -71,10 +71,10 @@
   }
   #sidebar .toggle-btn span {
     display:block;
-    width:27.5px;
+    width:30px;
     height:4px;
     background: black;
-    margin: 5px 0px;
+    margin: 5px 30px;
   }
 
   #main {
