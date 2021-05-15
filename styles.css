@@ -8,7 +8,17 @@
 
   ::-webkit-scrollbar {
     display: none;
-    }
+  }
+
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome and Opera */
+  }
 
   body{
     background-color:#FFFFFF;
@@ -35,6 +45,7 @@
     z-index: -1;
   }
   #sidebar {
+    cursor:pointer;
     border-radius: 20px;
     text-align: center;
     position:fixed;
@@ -88,7 +99,8 @@
   }
 
   #main.active{
-    left:400px;
+    transition: 1s;
+    left:350px;
   }
 
   #name{
@@ -128,14 +140,14 @@
     position:absolute;
     left: 200px;
     top: 250px;
-    color:#f5bba9;
     transition: 0.5s;
     font-size: large;
     z-index: 1;
-  } 
+  }
 
   #about.active{
-    left: 400px;
+    transition: 1s;
+    left: 350px;
   }
 
   #about p{
