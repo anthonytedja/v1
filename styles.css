@@ -63,19 +63,15 @@
   #sidebar.active{
     left:50px;
   }
-  #sidebar ul{
-    margin-top: 0px;
-  }
   #sidebar ul li{
     top: 200px;
     color:white;
     list-style: none;
-    padding: 15px 10px;
-    border-bottom: 1px solid white;
+    padding: 14px;
   }
   #sidebar ul li:hover{
     color: lightgoldenrodyellow;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: 0.2s;
   }
 
@@ -310,11 +306,6 @@ input:checked ~ .s {
 /* can't change the body here so this is why background was created */
 input:checked ~ .background {
 	background: #2F3437;
-}
-
-input:checked ~ #sidebar ul li {
-  transition: 0.5s;
-	border-bottom: 1px solid #2F3437;
 }
 
 input:checked ~ div #maincube {
