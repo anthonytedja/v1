@@ -23,6 +23,7 @@
   body{
     background-color:#FFFFFF;
     display: flex;
+    overflow:hidden;
   }
 
   #maincube {
