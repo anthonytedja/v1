@@ -1,7 +1,7 @@
 # website
 
-github pages hosted [webpage](https://anthonytedja.github.io/).
+github pages hosted webpage.
 
 ## Preview
 
-![Website Preview](preview.jpg)
+[![Website Preview](preview.jpg)](https://anthonytedja.github.io/)
