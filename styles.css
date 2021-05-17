@@ -88,6 +88,11 @@
     margin: 5px 30px;
   }
 
+  #sidebar .toggle-btn:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+  }
+
   #main {
     position:absolute;
     left: 200px;
@@ -290,6 +295,12 @@ label {
 	transition: 0.5s;
 	transform-origin: 105% 50%; /* put the transform origin outside the right of the switch so it rotates perfectly to the other side. spacing looks different on desktop and mobile not sure why. */
 	pointer-events: none; /* important this makes it so the underlying label can be clicked through the dummy switch */
+}
+
+label:hover ~ .s{
+  opacity: 0.7;
+  transition: 0.5s;
+  background: #5cff5c;
 }
 
 /* label rotates clockwise */
