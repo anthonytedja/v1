@@ -221,6 +221,7 @@ span.after {
 .typewriter h1 {
   font-family: "Arial", sans-serif;
   color: black;
+  width: 260px;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .15em solid black;
@@ -231,9 +232,8 @@ span.after {
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: .05em;
   /* Adjust as needed */
-  animation: typing 1.5s steps(40, end), /*2 is the type speed*/
-  blink-caret 1s step-end infinite;
-  /*1 is the blink speed*/
+  animation: typing 1.5s steps(40), /*1.5 is the type speed*/
+  blink-caret 1s step-end infinite; /*1 is the blink speed*/
 }
 
 /* The typing effect */
@@ -243,7 +243,7 @@ span.after {
     width: 0
   }
   to {
-    width: 100%
+    width: 260px
   }
 }
 
@@ -442,4 +442,25 @@ input:checked~#main p span {
 input:checked~#main a i {
   transition: 0.5s;
   color: white;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
