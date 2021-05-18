@@ -170,11 +170,13 @@ body {
   margin-right: 6px;
   position: relative;
   float: left;
+  font-size: 25px;
 }
 
 #main a i:hover {
   opacity: 0.3;
   transition: 0.2s;
+  font-size: 35px;
 }
 
 #main p {
@@ -224,7 +226,7 @@ span.after {
   width: 260px;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid black;
+  border-right: .15em solid transparent;
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
@@ -232,7 +234,7 @@ span.after {
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: .05em;
   /* Adjust as needed */
-  animation: typing 1.5s steps(40), /*1.5 is the type speed*/
+  animation: typing 1.5s steps(40, end), /*1.5 is the type speed*/
   blink-caret 1s step-end infinite; /*1 is the blink speed*/
 }
 
@@ -243,7 +245,7 @@ span.after {
     width: 0
   }
   to {
-    width: 260px
+    width: 260px; /* MAKE SAME AS .typewriter h1 WIDTH */
   }
 }
 
@@ -251,19 +253,19 @@ span.after {
 
 @keyframes blink-caret {
   from, to {
-    border-color: transparent
+    border-color: black
   }
   50% {
-    border-color: black;
+    border-color: transparent;
   }
 }
 
 @keyframes blink-caret-white {
   from, to {
-    border-color: transparent
+    border-color: white
   }
   50% {
-    border-color: white;
+    border-color: transparent;
   }
 }
 
