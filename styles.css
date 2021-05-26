@@ -85,10 +85,20 @@ body {
   padding: 14px;
 }
 
-#sidebar ul li:hover {
-  color: lightgoldenrodyellow;
-  opacity: 0.6;
-  transition: 0.2s;
+#sidebar ul li:after {
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+}
+
+#sidebar ul li:hover:after { 
+  width: 50%;
+  left: 25%;
 }
 
 #sidebar .toggle-btn {
@@ -167,7 +177,7 @@ body {
 #main a i {
   color: black;
   margin-top: 5px;
-  margin-right: 6px;
+  margin-right: 8px;
   position: relative;
   float: left;
   font-size: 25px;
