@@ -92,6 +92,7 @@ body {
   left: 50%;
   position: absolute;
   background: #fff;
+  margin-top: 4px;
   transition: width 0.5s ease 0s, left 0.5s ease 0s;
   width: 0;
 }
@@ -99,6 +100,7 @@ body {
 #sidebar ul li:hover:after { 
   width: 50%;
   left: 25%;
+  margin-top: 4px;
 }
 
 #sidebar .toggle-btn {
