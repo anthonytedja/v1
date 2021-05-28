@@ -4,4 +4,4 @@ github pages hosted webpage.
 
 ## Preview
 
-[![Website Preview](preview.jpg)](https://anthonytedja.github.io/)
+[![Website Preview](assets/preview.jpg)](https://anthonytedja.github.io/)
