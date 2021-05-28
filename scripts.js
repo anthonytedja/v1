@@ -100,6 +100,9 @@ window.onload = function () {
 };
 
 function hide() {
+  document.getElementById("sidebar").classList.toggle('active');
+  document.getElementById("main").classList.toggle('active');
+  document.getElementById("about").classList.toggle('active');
   document.getElementById("main").style.display = "none";
   document.getElementById("about").style.display = "none";
 }
