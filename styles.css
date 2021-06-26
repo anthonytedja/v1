@@ -272,7 +272,87 @@ span.after {
   }
 }
 
+/* Firefox < 16 */
+@-moz-keyframes blink-caret {
+  from, to {
+    border-color: black
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: black
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes blink-caret {
+  from, to {
+    border-color: black
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes blink-caret {
+  from, to {
+    border-color: black
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
 @keyframes blink-caret-white {
+  from, to {
+    border-color: white
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes blink-caret-white {
+  from, to {
+    border-color: white
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes blink-caret-white {
+  from, to {
+    border-color: white
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes blink-caret-white {
+  from, to {
+    border-color: white
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes blink-caret-white {
   from, to {
     border-color: white
   }
