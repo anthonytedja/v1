@@ -1,81 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Anthony Tedja">
-  <meta name="keywords" content="Anthony Tedja, Personal Website">
-  <meta name="description" property="og:description" content="Anthony Tedja's Personal Webpage">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" property="og:title" content="Anthony Tedja" />
-  <meta property="og:type" content="Website" />
-  <meta name="image" property="og:image" content="assets/preview.jpg" />
-
-  <title>Anthony Tedja's Webpage</title>
-  <link rel="icon" href="https://img.icons8.com/ios/250/FFFFFF/contrast.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Anthony Tedja | Website</title>
+    <link rel="icon" href="https://img.icons8.com/ios/250/FFFFFF/contrast.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body>
-  <canvas class='connecting-dots'></canvas>
-  <input type="checkbox" id="switch" checked />
-  <label for="switch"></label>
-  <div class="s"></div> <!-- make the switch independent so it can be rotated opposite to label -->
-  <div class="background"></div> <!-- need this so css can access the background to change the color -->
-  <div id="sidebar">
-    <div class="toggle-btn" onclick="openSidebar()">
-      <span class="sidebar-top"></span>
-      <span class="sidebar-middle"></span>
-      <span class="sidebar-bottom"></span>
-    </div>
-    <ul>
-      <li class="noselect" onclick="showHome()">home</li>
-      <li class="noselect" onclick="showAbout()">about</li>
-      <li class="noselect" href="#" onclick='window.open("resume.pdf");return false;'>&nbsp resume &#8599</li>
-    </ul>
-  </div>
-
-  <div id="main">
-    <div id="maincube"></div>
-    <div class="typewriter">
-      <h1>@anthonytedja</h1>
-    </div>
-
-    <br class="noselect"><br class="noselect"><br class="noselect">
-    <p class="noselect" id="name">
-      <span hover-name="Now please get out  >:(">Welcome to my room :)</span>
-    </p>
-    <br class="noselect">
-    <a href="mailto:anthonytedja27@gmail.com">
-      <i class="fa fa-envelope-o fa-lg"></i>
-    </a>
-    <a href="https://github.com/anthonytedja">
-      <i class="fa fa-github fa-lg"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/anthonytedja/">
-      <i class="fa fa-linkedin-square fa-lg"></i>
-    </a>
-    <a href="https://www.instagram.com/anthonytedja">
-      <i class="fa fa-instagram fa-lg"></i>
-    </a>
-  </div>
-
-  <div id="about">
-    <div class="typewriter">
-      <h1>all about me.</h1>
-    </div>
-    <p><span class="after noselect" style="color: white;">&nbsp &nbsp pokemon master.
-        <br><br> &nbsp &nbsp mother of 3. <br><br> &nbsp &nbsp amateur human.
-        <br><br> &nbsp &nbsp certified weeb. <br><br></span>
-      <span class="before noselect" style="color: white;">{<br>&nbsp &nbsp contact: @home;
-        <br>&nbsp &nbsp university: @uoft;<br>&nbsp &nbsp year: 3rd cs-math;<br>&nbsp &nbsp eating: probably;
-        <br>&nbsp &nbsp asleep: definitely;<br>}<br><br></span></span>
-    </p>
-    <div id="aboutcube"></div>
-  </div>
-
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="/*background-color: var(--bs-gray-800);*//*background: transparent;*/">
+        <div class="container"><a class="navbar-brand" href="#" style="text-transform: lowercase;">anthonytedja</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link"><a class="nav-link active" href="#about" style="font-family: &quot;Verdana&quot;, sans-serif;text-transform: lowercase;">About</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#download" style="font-family: &quot;Verdana&quot;, sans-serif;text-transform: lowercase;">projects</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#contact" style="font-family: &quot;Verdana&quot;, sans-serif;text-transform: lowercase;">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: rgba(0, 0, 0, 0.4) url('assets/img/2.jpg');background-size: cover;background-blend-mode: darken;">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto" style="height: 200px;">
+                        <h3 class="brand-heading"></h3>
+                        <p class="intro-text" style="overflow: hidden;border-right: .15em solid transparent;white-space: nowrap;margin: 0 auto;animation: typing 2.5s steps(40, end), blink-caret 1s step-end infinite;width: 330px;font-size: 23px;">Hey! Welcome to my corner.</p><a class="btn btn-link btn-circle" role="button" href="#about" style="transform: translateY(220px);"><i class="fa fa-angle-double-down animated"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center content-section" id="about" style="background-color: #0b0c10;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="color: #8892b0;">
+                    <h2 style="color: #ccd6f6;">About</h2>
+                    <p>Hey, I'm Anthony, a third year <strong>Computer Science Specialist</strong> at the University of Toronto. My interests are in Algorithm Design as well as Data Structure Analysis.&nbsp;&nbsp;</p>
+                    <p>I've previously worked at <strong>Kumon </strong>as a Math and English Teachers Assistant, and was previously at the <strong>Ontario Conservatory of Music</strong> as a Music Teacher.</p>
+                    <p>Outside of Academics, I enjoy playing guitar as well as taking photos for&nbsp;<a href="https://unsplash.com/@anthonytedja" style="color: #ccd6f6;"><strong>Unsplash</strong></a>. I'm most likely watching anime or playing Pokemon at the moment!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center download-section content-section" id="download" style="background-color: #0b0c10;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="color: #8892b0;">
+                    <h2 style="color: #ccd6f6;">Projects</h2>
+                    <p>Checkout my&nbsp;<a href="https://github.com/anthonytedja" style="color: #ccd6f6;"><strong>Github</strong></a>&nbsp;for some of my public projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center content-section" id="contact" style="background-color: #0b0c10;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto" style="color: #8892b0;">
+                    <h2 style="color: #ccd6f6;">Contact</h2>
+                    <p>My inbox is always open to opportunities, feedback, or invites!</p><a href="mailto:anthonytedja27@gmail.com"><i class="fa fa-envelope-o" style="font-size: 40px; color: #ccd6f6;"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/grayscale.js"></script>
 </body>
 
 </html>
