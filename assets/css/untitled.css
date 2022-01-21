@@ -3,7 +3,7 @@
     width: 0;
   }
   to {
-    width: 330px;
+    width: 300px;
   }
 }
 
@@ -73,5 +73,14 @@ a:hover {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+* {
+  font-family: "Courier New", monospace;
+}
+
+#logo {
+  max-height: 40px;
+  margin-right: 15px;
 }
 
