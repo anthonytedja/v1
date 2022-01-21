@@ -16,3 +16,62 @@
   }
 }
 
+@media (min-width: 300px) {
+  .masthead {
+    background-position: 13% !important;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a:hover {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted white;
+}
+
+.tooltip .tooltiptext {
+  font-family: "Verdana", sans-serif;
+  font-size: initial !important;
+  font-style: normal;
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #8892b0;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
