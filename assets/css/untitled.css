@@ -85,14 +85,12 @@
 
 @media (hover: hover) {
   a:hover {
-    opacity: 0.3;
+    opacity: 0.5;
     transition: 0.5s;
   }
 }
 
-@media (min-width: 576px) {
-  a:active {
-    opacity: 0.3;
-  }
+a:active {
+  opacity: 0.3;
 }
 
