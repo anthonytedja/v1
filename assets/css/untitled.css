@@ -90,3 +90,9 @@
   }
 }
 
+@media (min-width: 576px) {
+  a:active {
+    opacity: 0.3;
+  }
+}
+
