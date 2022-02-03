@@ -31,11 +31,6 @@
   }
 }
 
-a:hover {
-  opacity: 0.3;
-  transition: 0.5s;
-}
-
 .tooltip {
   position: relative;
   display: inline-block;
@@ -86,5 +81,12 @@ a:hover {
 
 .icons:hover {
   transform: scale(1.2);
+}
+
+@media (hover: hover) {
+  a:hover {
+    opacity: 0.3;
+    transition: 0.5s;
+  }
 }
 
