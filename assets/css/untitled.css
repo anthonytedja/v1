@@ -84,3 +84,7 @@ a:active {
   }
 }
 
+.col-lg-8 > p {
+  padding: 0px 20px;
+}
+
