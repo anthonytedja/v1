@@ -73,10 +73,10 @@ a:active {
   50% {
     transform: scale(1.05,.95) translateY(0);
   }
-  57% {
+  65% {
     transform: scale(1,1) translateY(-7px);
   }
-  64% {
+  80% {
     transform: scale(1,1) translateY(0);
   }
   100% {
