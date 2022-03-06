@@ -88,3 +88,31 @@ a:active {
   padding: 0px 20px;
 }
 
+body > section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section > container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+body {
+  background-color: #0b0c10;
+}
+
+.navbar-shrink {
+  background-color: #0b0c10 !important;
+  /*border-bottom: none !important;*/
+}
+
+@media (min-width: 300px) {
+  .content-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
