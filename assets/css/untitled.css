@@ -109,10 +109,3 @@ body {
   /*border-bottom: none !important;*/
 }
 
-@media (min-width: 300px) {
-  .content-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
