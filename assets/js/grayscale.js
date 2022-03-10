@@ -16,11 +16,16 @@
       var navbarItems = navbarCollapse.querySelectorAll('a');
       
       // Closes responsive menu when a scroll trigger link is clicked
+        
       for (var item of navbarItems) {
         item.addEventListener('click', function (event) {
           collapse.hide();
         });
       }
+        
+        document.querySelector('#navbar-logo').addEventListener('click', function (event) {
+            collapse.hide();
+});
     }
 
     // Collapse Navbar
