@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="assets/css/Features-Boxed.css">
     <link rel="stylesheet" href="assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="assets/css/Projects-Horizontal.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product-1.css">
+    <link rel="stylesheet" href="assets/css/Swiper-Slider-Card-For-Blog-Or-Product.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
@@ -64,52 +66,55 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto" style="color: #8892b0;">
-                    <section class="features-boxed">
-                        <div class="container" style="background-color: #0b0c10;">
-                            <div class="intro">
-                                <h2 style="color: #ccd6f6;">Projects</h2>
+                    <h2 style="color: #ccd6f6;">Projects</h2>
+                    <div class="blog-slider">
+                        <div class="blog-slider__wrp swiper-wrapper">
+                            <div class="blog-slider__item swiper-slide">
+                                <div></div>
+                                <div class="blog-slider__img"><img src="assets/img/notion.gif"></div>
+                                <div class="blog-slider__content"><span class="blog-slider__code">JavaScript, CSS, HTML</span><div class="blog-slider__title">notion</div><div class="blog-slider__text">notion hosts a range of widgets for Notion.so pages that automatically sync to your light or dark mode theme settings</div><a href="https://github.com/anthonytedja/notion" target="_blank" style="font-size: 2em;"><i class="icon ion-social-github"></i></a></div>
                             </div>
-                            <div class="row justify-content-center features" style="margin-top: -30px;margin-bottom: -30px;">
-                                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                                    <div class="box"><a href="https://github.com/anthonytedja/mips" target="_blank"><i class="icon ion-social-github" style="color: #59dcd4;"></i></a>
-                                        <h3 class="name">Mips Discord Bot</h3>
-                                        <p class="description">mips is a small discord bot that&nbsp;decompiles binary code into MIPS architecture assembly instructions<br></p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                                    <div class="box"><a href="https://github.com/anthonytedja/notion" target="_blank"><i class="icon ion-social-github" style="color: #59dcd4;"></i></a>
-                                        <h3 class="name">Notion Widgets</h3>
-                                        <p class="description">notion hosts a range of widgets like weather and clock widgets in light and dark mode for Notion page embeds<br></p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                                    <div class="box"><i class="icon ion-android-folder"></i>
-                                        <h3 class="name">Theorem Prover</h3>
-                                        <p class="description">an academic project in miniKanren Racket that implements a proof checker for implicational minimal logic<br></p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                                    <div class="box"><a href="https://anthonytedja.github.io/takeout/" target="_blank"><i class="icon ion-android-open" style="color: #59dcd4;"></i></a>
-                                        <h3 class="name">Food Takeout</h3>
-                                        <p class="description">takeout is a web app that chooses restaurants at various price ranges to solve dinner fights with my girlfriend<br></p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                                    <div class="box"><i class="icon ion-android-folder"></i>
-                                        <h3 class="name">Zip File<br></h3>
-                                        <p class="description">an academic project in Python that implements a lossless compression and decompression algorithm using Huffman Trees<br></p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-5 col-lg-4 item">
-                                    <div class="box"><a href="https://github.com/anthonytedja/bounce" target="_blank"><i class="icon ion-social-github" style="color: #59dcd4;"></i></a>
-                                        <h3 class="name">Bounce Game</h3>
-                                        <p class="description">bounce&nbsp;is a MIPS bitmap assembly mini game driven by the MARS simulator, modelled after the popular game Doodle Jump<br></p>
-                                    </div>
-                                </div>
+                            <div class="blog-slider__item swiper-slide">
+                                <div></div>
+                                <div class="blog-slider__img"><img src="assets/img/bounce.gif"></div>
+                                <div class="blog-slider__content"><span class="blog-slider__code">MIPS, Assembly, Mars</span><div class="blog-slider__title">bounce</div><div class="blog-slider__text">bounce is a MIPS bitmap assembly mini game driven by the MARS MMIO simulator, modelled after the game Doodle Jump</div><a href="https://github.com/anthonytedja/bounce" target="_blank" style="font-size: 2em;"><i class="icon ion-social-github"></i></a></div>
                             </div>
+                            <div class="blog-slider__item swiper-slide">
+                                <div></div>
+                                <div class="blog-slider__img"><img src="assets/img/mips.jpg"></div>
+                                <div class="blog-slider__content"><span class="blog-slider__code">Python, MIPS, Decompiler</span><div class="blog-slider__title">mips</div><div class="blog-slider__text">mips is a discord bot that decompiles binary code into MIPS architecture assembly instructions</div><a href="https://github.com/anthonytedja/mips" target="_blank" style="font-size: 2em;"><i class="icon ion-social-github"></i></a></div>
+                            </div>
+                            <div class="blog-slider__pagination"></div>
                         </div>
-                    </section>
-                    <p>Checkout my&nbsp;<a href="https://github.com/anthonytedja" style="color: #ccd6f6;"><strong>Github</strong></a>&nbsp;for more of my public projects.</p>
+                    </div>
+                    <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button" id="more-projects" style="margin-top: 1.5em;border-radius: 4px;background-color: #ccd6f6;border-color: #ccd6f6;box-shadow: none;">More projects</a>
+                        <div class="collapse show" id="collapse-1">
+                            <section class="features-boxed">
+                                <div class="container" style="background-color: #0b0c10;">
+                                    <div class="row justify-content-center features" style="margin-top: -30px;margin-bottom: -30px;">
+                                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                            <div class="box"><i class="icon ion-android-folder"></i>
+                                                <h3 class="name">Logic Check</h3>
+                                                <p class="description">an academic project in Racket that implements a theorem checker for implicational minimal logic using&nbsp;<br>miniKanren<br></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                            <div class="box"><a href="https://anthonytedja.github.io/takeout/" target="_blank"><i class="icon ion-android-open" style="color: #59dcd4;"></i></a>
+                                                <h3 class="name">Food Takeout</h3>
+                                                <p class="description">takeout is a web app that chooses restaurants at various price ranges to solve dinner fights with my girlfriend<br></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                            <div class="box"><i class="icon ion-android-folder"></i>
+                                                <h3 class="name">Zip File<br></h3>
+                                                <p class="description">an academic project in Python that implements a lossless compression and decompression algorithm using Huffman Trees<br></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,6 +137,7 @@
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/grayscale.js"></script>
+    <script src="assets/js/Swiper-Slider-Card-For-Blog-Or-Product.js"></script>
 </body>
 
 </html>
