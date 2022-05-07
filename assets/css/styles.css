@@ -88,3 +88,7 @@
   transform: rotate(-360deg);
 }
 
+#cat:hover {
+  cursor: pointer;
+}
+
