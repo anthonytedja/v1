@@ -4,6 +4,11 @@
 
 > github pages hosted personal website.
 
+## Features
+
+- Localstorage saves light and dark modes
+- Dynamic Favicon
+
 ## Built With
 
 - Bootstrap Studio
