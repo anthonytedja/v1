@@ -1,24 +1,44 @@
+:root {
+  --main-bg-color: #191919;
+  --second-bg-color: #202020;
+  --main-text-color: #d4d4d4;
+  --scroll-color: #8CC8FF;
+  --arrow-color: #F58f70;
+  --bg-shade: soft-light;
+  --link-color: #8CC8FF;
+}
+
+[anthonytedja-data-theme="light"] {
+  --main-bg-color: #fff;
+  --second-bg-color: #f8f9fa;
+  --main-text-color: #212529;
+  --scroll-color: #fff;
+  --arrow-color: #212529;
+  --bg-shade: normal;
+  --link-color: #212529;
+}
+
 @keyframes bounce {
   0% {
-    transform: scale(1,1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
   10% {
-    transform: scale(1.1,.9) translateY(0);
+    transform: scale(1.1, .9) translateY(0);
   }
   30% {
-    transform: scale(.9,1.1) translateY(-10px);
+    transform: scale(.9, 1.1) translateY(-10px);
   }
   50% {
-    transform: scale(1.05,.95) translateY(0);
+    transform: scale(1.05, .95) translateY(0);
   }
   65% {
-    transform: scale(1,1) translateY(-7px);
+    transform: scale(1, 1) translateY(-7px);
   }
   80% {
-    transform: scale(1,1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
   100% {
-    transform: scale(1,1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
 }
 
@@ -51,7 +71,7 @@
 
 @media (min-width: 992px) {
   .portfolio-item:hover .caption {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     -webkit-clip-path: inset(1rem);
     clip-path: inset(1rem);
     opacity: 1;
@@ -88,15 +108,28 @@
   border-radius: 15px;
 }
 
-#navbar-logo:hover > #logo {
-  transform: rotate(180deg);
+#logo:hover {
+  transform: rotate(180deg) scale(1.2);
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 #logo {
   transform: rotate(-360deg);
+  transition: all ease 0.2s;
 }
 
 #cat:hover {
   cursor: pointer;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  transition: all ease 0.2s;
+}
+
+a:hover {
+  color: #4fa5f4;
 }
 
