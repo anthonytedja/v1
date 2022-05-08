@@ -7,6 +7,7 @@
   --bg-shade: soft-light;
   --link-color: #8CC8FF;
   --logo-transform: rotate(180deg) scale(1.2);
+  --border-color: #282828;
 }
 
 [anthonytedja-data-theme="light"] {
@@ -18,6 +19,7 @@
   --bg-shade: normal;
   --link-color: #212529;
   --logo-transform: rotate(0deg) scale(1.2);
+  --border-color: #dee2e6;
 }
 
 @keyframes bounce {
@@ -113,8 +115,9 @@
 .img-fluid {
   max-width: 100%;
   height: auto;
-  border: 4px solid var(--bs-gray-300);
+  border: 4px solid var(--border-color);
   border-radius: 15px;
+  transition: all ease 0.2s;
 }
 
 @media (hover: hover) {
