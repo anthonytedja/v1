@@ -81,10 +81,10 @@
 @media (min-width: 992px) {
   .portfolio-item:hover .caption {
     background-color: rgba(0, 0, 0, 0.6);
-    -webkit-clip-path: inset(1rem);
-    clip-path: inset(1rem);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
     opacity: 1;
-    transition: all ease 0.5s;
+    transition: all ease 0.4s;
   }
 }
 
