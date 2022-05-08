@@ -18,17 +18,19 @@ function changeFavicon(mode) {
 function light() {
 	localStorage.setItem('anthonytedja-data-theme', 'light');
 	document.documentElement.setAttribute('anthonytedja-data-theme', 'light');
-	document.getElementById('logo').style.filter = 'none';
+	document.getElementById('logo').style.filter = 'invert(15%)';
     document.getElementById('logo').style.transform = 'rotate(0)';
 	document.getElementById('click').style.filter = 'none';
+    document.getElementById('hello').style.filter = 'invert(15%)';
 	changeFavicon('dark');
 }
 function dark() {
 	localStorage.setItem('anthonytedja-data-theme', 'dark');
 	document.documentElement.setAttribute('anthonytedja-data-theme', 'dark');
-	document.getElementById('logo').style.filter = 'invert(100%)';
+	document.getElementById('logo').style.filter = 'invert(80%)';
     document.getElementById('logo').style.transform = 'rotate(180deg)';
-	document.getElementById('click').style.filter = 'invert(100%)';
+	document.getElementById('click').style.filter = 'invert(90%)';
+    document.getElementById('hello').style.filter = 'invert(80%)';
 	changeFavicon('light');
 }
 

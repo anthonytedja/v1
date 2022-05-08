@@ -6,7 +6,7 @@
 
 ## Features
 
-- Localstorage saves light and dark modes
+- JavaScript Local Storage saves theme settings
 - Dynamic Favicon
 
 ## Built With
