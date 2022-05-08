@@ -6,6 +6,7 @@
   --arrow-color: #F58f70;
   --bg-shade: soft-light;
   --link-color: #8CC8FF;
+  --logo-transform: rotate(180deg) scale(1.2);
 }
 
 [anthonytedja-data-theme="light"] {
@@ -16,6 +17,7 @@
   --arrow-color: #212529;
   --bg-shade: normal;
   --link-color: #212529;
+  --logo-transform: rotate(0deg) scale(1.2);
 }
 
 @keyframes bounce {
@@ -109,14 +111,17 @@
 }
 
 #logo:hover {
-  transform: rotate(180deg) scale(1.2);
   opacity: 0.5;
   cursor: pointer;
+  transform: var(--logo-transform) !important;
 }
 
 #logo {
   transform: rotate(-360deg);
-  transition: all ease 0.2s;
+  /*transition: all ease 0.2s;*/
+  max-height: 2.5rem;
+  margin-right: 20px;
+  transition: 1s;
 }
 
 #cat:hover {
