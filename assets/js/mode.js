@@ -27,7 +27,7 @@ function light() {
 function dark() {
 	localStorage.setItem('anthonytedja-data-theme', 'dark');
 	document.documentElement.setAttribute('anthonytedja-data-theme', 'dark');
-	document.getElementById('logo').style.filter = 'invert(90%)';
+	document.getElementById('logo').style.filter = 'invert(85%)';
     document.getElementById('logo').style.transform = 'rotate(180deg)';
 	document.getElementById('click').style.filter = 'invert(90%)';
     document.getElementById('hello').style.filter = 'invert(80%)';
