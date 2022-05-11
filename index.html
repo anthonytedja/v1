@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/typing.css">
 </head>
 
 <body id="page-top" ontouchstart="">
-    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="margin: 0.5em 0;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" data-aos="fade" data-aos-duration="1200" data-aos-delay="100" data-aos-once="true" id="mainNav" style="margin: 0.5em 0;">
         <div class="container"><img id="logo" class="links" src="assets/img/icon.png"><a class="navbar-brand links" id="navbar-logo" href="#" style="font-weight: 600;color: var(--main-text-color) !important;transition: all ease 0.2s;">anthonytedja</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right links" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="color: var(--main-text-color) !important;transition: all ease 0.2s;border-color: var(--main-text-color) !important;border: 2px solid transparent;"><i class="fa fa-bars" style="margin: 0.5rem 0;"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive" style="font-weight: 600;">
                 <ul class="navbar-nav ms-auto" style="/*padding: 0px 10px;*//*text-align: right;*/flex-direction: row;align-items: center;justify-content: center;/*margin: 0 1rem;*/">
@@ -33,35 +34,31 @@
             </div>
         </div>
     </nav>
-    <header class="d-flex masthead" style="background-image: url(&quot;assets/img/background.svg&quot;);background-size: cover;min-height: 100vh;align-items: center;justify-content: center;background-color: var(--main-bg-color) !important;transition: all ease 0.2s;/*background-blend-mode: var(--bg-shade);*/">
+    <header class="d-flex masthead" style="min-height: 100vh;align-items: center;justify-content: center;background-color: var(--main-bg-color) !important;transition: all ease 0.2s;/*background-blend-mode: var(--bg-shade);*/background-image: url(&quot;assets/img/background.svg&quot;);background-size: cover;">
         <div class="masthead-content">
             <div class="container h-100" style="text-align: center;margin-top: 1rem;padding: 2rem;color: var(--main-text-color) !important;transition: all ease 0.2s;">
-                <p style="text-align: left;font-weight: 600;margin-bottom: 0;">Hey there! I'm</p>
-                <h1 class="masthead-heading mb-0" style="text-align: left;"><span style="color: lightsteelblue;">Anthony Tedja.</span></h1>
-                <h2 class="masthead-subheading mb-0" style="text-align: left;">Welcome to my page!</h2>
-                <p style="text-align: left;font-weight: 600;margin-top: 1rem;">I bug fixes.</p><a class="btn btn-link btn-circle" role="button" href="#about" style="-webkit-animation: fadein 2s;-moz-animation: fadein 2s;-ms-animation: fadein 2s;animation: fadein 2s;transform: translateY(2rem);"><i class="fa fa-angle-down animated bounce" style="animation: bounce 2s infinite;font-size: 3rem;color: var(--arrow-color) !important;transition: all ease 0.2s;"></i></a>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" style="text-align: left;font-weight: 600;margin-bottom: 0;">Hey there! I'm</p>
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true" class="masthead-heading mb-0" style="text-align: left;"><span style="color: lightsteelblue;">Anthony Tedja.</span></h1>
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="masthead-subheading mb-0" style="text-align: left;">Welcome to my page!</h2>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" style="text-align: left;font-weight: 600;margin-top: 1rem;">I bug fixes.</p><a class="btn btn-link btn-circle" role="button" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1400" data-aos-once="true" href="#about" style="-webkit-animation: fadein 2s;-moz-animation: fadein 2s;-ms-animation: fadein 2s;animation: fadein 2s;/*transform: translateY(2rem);*/"><i class="fa fa-angle-down animated bounce" style="animation: bounce 2s infinite;font-size: 3rem;color: var(--arrow-color) !important;transition: all ease 0.2s;"></i></a>
             </div>
         </div>
     </header>
     <section id="about" class="content-section" style="min-height: 100vh;display: flex;align-items: center;justify-content: center;background-color: var(--second-bg-color) !important;transition: all ease 0.2s;">
-        <div class="container">				<div class="caption v-middle text-center">
-					<h1 class="cd-headline clip">
-			            <span class="blc"></span>
-			            <span class="cd-words-wrapper">
-			              <b class="is-visible"><span style="color: lightsteelblue;">about.</span></b>
-			            </span>
-	          		</h1>
-				</div>
+        <div class="container">
+            <div class="caption v-middle text-center">
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span style="color: lightsteelblue;">about.</span></strong></span></h1>
+            </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-1" style="padding: 0;">
-                    <div style="display: flex;justify-content: center;padding: 2rem;"><img id="click" src="assets/img/click.png" style="max-height: 6rem;transition: all ease 0.2s;"><img class="rounded-circle img-fluid links" id="cat" src="assets/img/cat.gif" style="max-width: 75%;border: none;border-radius: 0 !important;"></div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" style="display: flex;justify-content: center;padding: 2rem;"><img id="click" src="assets/img/click.png" style="max-height: 6rem;transition: all ease 0.2s;"><img class="rounded-circle img-fluid links" id="cat" src="assets/img/cat.gif" style="max-width: 75%;border: none;border-radius: 0 !important;"></div>
                 </div>
                 <div class="col-lg-6 order-lg-2" style="padding: 0;">
                     <div style="padding: 2rem;color: var(--main-text-color) !important;transition: all ease 0.2s;">
-                        <h2 class="display-4" style="font-weight: 500;">🖐 hello world!</h2>
-                        <p>Hey, I'm <strong>Anthony</strong>, a Computer Science Specialist 💻 at the University of Toronto. My interests are in Web Development, Machine Learning and Artificial Intelligence.<br></p>
-                        <p>A few technologies I have been working with recently are React, Node.js, and OpenCV. I'm now learning how to use Amazon Web and Google Cloud Services.</p>
-                        <p>Outside of Academics, I enjoy playing guitar 🎸 as well as taking photos 📷. I'm most likely playing volleyball 🏐 or watching a kdrama 🎬 at the moment!<br></p>
+                        <h2 class="display-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" data-aos-once="true" style="font-weight: 500;">🖐 hello world!</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true">Hey, I'm <strong>Anthony</strong>, a Computer Science Specialist 💻 at the University of Toronto. My interests are in Web Development, Machine Learning and Artificial Intelligence.<br></p>
+                        <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1000" data-aos-once="true">A few technologies I have been working with recently are React, Node.js, and OpenCV. I'm now learning how to use Amazon Web and Google Cloud Services.</p>
+                        <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1200" data-aos-once="true">Outside of Academics, I enjoy playing guitar 🎸 as well as taking photos 📷. I'm most likely playing volleyball 🏐 or watching a kdrama 🎬 at the moment!<br></p>
                     </div>
                 </div>
             </div>
@@ -69,16 +66,13 @@
     </section>
     <section id="projects" class="content-section" style="min-height: 100vh;display: flex;align-items: center;justify-content: center;background-color: var(--main-bg-color) !important;transition: all ease 0.2s;">
         <div class="container">
-            <div class="content-section-heading text-center">				<div class="caption v-middle text-center">
-					<h1 class="cd-headline clip">
-			            <span class="blc"></span>
-			            <span class="cd-words-wrapper">
-			              <b class="is-visible"><span style="color: lightsteelblue;">projects.</span></b>
-			            </span>
-	          		</h1>
-				</div></div>
+            <div class="content-section-heading text-center">
+                <div class="caption v-middle text-center">
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span style="color: lightsteelblue;">projects.</span></strong></span></h1>
+                </div>
+            </div>
             <div class="row g-0">
-                <div class="col-lg-6" style="padding: 1rem;"><a class="portfolio-item links" href="https://devpost.com/software/speakcv">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://devpost.com/software/speakcv">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>speakCV.&nbsp;<span style="color: var(--bs-yellow);">DeerHacks 2022 1st Place</span></h2>
@@ -86,7 +80,7 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/speakCV.jpg">
                     </a></div>
-                <div class="col-lg-6" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/restify">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/restify">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Restify</h2>
@@ -94,7 +88,7 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/restify.jpg">
                     </a></div>
-                <div class="col-lg-6" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/notion">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/notion">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Notion</h2>
@@ -102,7 +96,7 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/notion.jpg">
                     </a></div>
-                <div class="col-lg-6" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/mips">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/mips">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Mips</h2>
@@ -110,7 +104,7 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/mips.jpg">
                     </a></div>
-                <div class="col-lg-6" style="padding: 1rem;"><a class="portfolio-item links" href="https://github.com/anthonytedja/zip">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://github.com/anthonytedja/zip">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Zip</h2>
@@ -118,7 +112,7 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/zip.jpg">
                     </a></div>
-                <div class="col-lg-6" style="padding: 1rem;"><a class="portfolio-item links" href="https://github.com/anthonytedja/bounce">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://github.com/anthonytedja/bounce">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Bounce</h2>
@@ -130,26 +124,23 @@
         </div>
     </section>
     <section id="contact" class="content-section" style="min-height: 100vh;display: flex;align-items: center;justify-content: center;background-color: var(--second-bg-color) !important;transition: all ease 0.2s;">
-        <div class="container">				<div class="caption v-middle text-center">
-					<h1 class="cd-headline clip">
-			            <span class="blc"></span>
-			            <span class="cd-words-wrapper">
-			              <b class="is-visible"><span style="color: lightsteelblue;">contact.</span></b>
-			            </span>
-	          		</h1>
-				</div>
+        <div class="container">
+            <div class="caption v-middle text-center">
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span style="color: lightsteelblue;">contact.</span></strong></span></h1>
+            </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-1" style="padding: 0;">
-                    <div style="padding: 2rem;"><img id="hello" src="assets/img/hello.png" style="max-height: 6rem;transition: all ease 0.2s;margin-left: 3rem;"><a class="links" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="display: flex;justify-content: center;"><img class="rounded-circle img-fluid" src="assets/img/main.jpg" style="max-width: 75%;/*box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);*/"></a></div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" style="padding: 2rem;"><img id="hello" src="assets/img/hello.png" style="max-height: 6rem;transition: all ease 0.2s;margin-left: 3rem;"><a class="links" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="display: flex;justify-content: center;"><img class="rounded-circle img-fluid" src="assets/img/main.jpg" style="max-width: 75%;/*box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);*/"></a></div>
                 </div>
                 <div class="col-lg-6 order-lg-2" style="padding: 0;">
                     <div style="padding: 2rem;color: var(--main-text-color) !important;transition: all ease 0.2s;">
-                        <h2 class="display-4" style="font-weight: 500;">👋 @anthonytedja</h2>
-                        <p>Checkout my&nbsp;<a href="https://github.com/anthonytedja">GitHub</a>&nbsp;or&nbsp;<a href="https://devpost.com/anthonytedja">Devpost</a>&nbsp;for more projects.<br></p>
-                        <p>Feel free to get in touch and connect through my spaces below!&nbsp;<br></p><a href="mailto:anthony.tedja@mail.utoronto.ca" style="font-size: 40px;padding: 0px 10px 0px;"><i class="fa fa-envelope-o links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a><a href="https://github.com/anthonytedja" style="font-size: 40px;padding: 0px 10px 0px;"><i class="fa fa-github links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a><a class="links" href="https://unsplash.com/@anthonytedja" style="font-size: 50px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;" title="Unsplash">
-                                <path d="M15 4.5H9V8.5H15V4.5Z" fill="currentColor"></path>
-                                <path d="M4 10.5H9V14.5H15V10.5H20V19.5H4V10.5Z" fill="currentColor"></path>
-                            </svg></a><a href="https://www.linkedin.com/in/anthonytedja" style="font-size: 40px;padding: 0px 10px 0px;"><i class="fa fa-linkedin-square links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a><a href="https://www.instagram.com/anthonytedja" style="font-size: 40px;padding: 0px 10px 0px;"><i class="fa fa-instagram links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a>
+                        <h2 class="display-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" data-aos-once="true" style="font-weight: 500;">👋 @anthonytedja</h2>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true">Checkout my&nbsp;<a href="https://github.com/anthonytedja">GitHub</a>&nbsp;or&nbsp;<a href="https://devpost.com/anthonytedja">Devpost</a>&nbsp;for more projects.<br></p>
+                        <p data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1000" data-aos-once="true">Feel free to get in touch and connect through my spaces below!&nbsp;<br></p>
+                        <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1200" data-aos-once="true"><a href="mailto:anthony.tedja@mail.utoronto.ca" style="font-size: 40px;padding: 0px 10px 0px;"><i class="fa fa-envelope-o links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a><a href="https://github.com/anthonytedja" style="font-size: 40px;padding: 0px 10px 0px;"><i class="fa fa-github links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a><a class="links" href="https://unsplash.com/@anthonytedja" style="font-size: 50px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;" title="Unsplash">
+                                    <path d="M15 4.5H9V8.5H15V4.5Z" fill="currentColor"></path>
+                                    <path d="M4 10.5H9V14.5H15V10.5H20V19.5H4V10.5Z" fill="currentColor"></path>
+                                </svg></a><a href="https://www.linkedin.com/in/anthonytedja" style="font-size: 40px;padding: 0px 10px 0px;"><i class="fa fa-linkedin-square links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a><a href="https://www.instagram.com/anthonytedja" style="font-size: 40px;padding: 0px 10px 0px;"><i class="fa fa-instagram links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a></div>
                     </div>
                 </div>
             </div>
@@ -162,6 +153,8 @@
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/catgif.js"></script>
     <script src="assets/js/mode.js"></script>
