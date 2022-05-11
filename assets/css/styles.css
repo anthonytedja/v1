@@ -130,10 +130,9 @@
 
 #logo {
   transform: rotate(-360deg);
-  /*transition: all ease 0.2s;*/
   max-height: 3rem;
   margin-right: 20px;
-  transition: 1s;
+  transition: all ease 0.5s;
 }
 
 @media (hover: hover) {
