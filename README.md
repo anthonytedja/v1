@@ -7,6 +7,7 @@
 ## Features
 
 - JavaScript Local Storage saves theme settings
+- Scroll Animations with [AOS library](https://github.com/michalsnik/aos)
 - Dynamic Favicon
 
 ## Built With
