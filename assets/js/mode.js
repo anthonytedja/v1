@@ -1,6 +1,5 @@
 document.querySelector('#logo').addEventListener('click', function(e) {
 	const currentTheme = localStorage.getItem('anthonytedja-data-theme');
-	console.log(currentTheme);
 	if (currentTheme === 'dark') {
 		light();
 	} else {
@@ -10,7 +9,6 @@ document.querySelector('#logo').addEventListener('click', function(e) {
 
 function changeFavicon(mode) {
 	document.querySelectorAll("link[type='image/png']").forEach(function(e) {
-		console.log(e);
 		e.href = 'assets/img/' + e.sizes.value + mode + '.png';
 	});
 }
