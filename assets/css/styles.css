@@ -190,13 +190,13 @@ a:hover {
 }
 
 @media (hover: hover) {
-  #name > span:hover {
+  .name > span:hover {
     animation: bounce 1s infinite;
     color: var(--name-hover);
   }
 }
 
-#name > span {
+.name > span {
   display: inline-block;
   transition: all ease 0.2s;
 }
@@ -204,5 +204,9 @@ a:hover {
 .btn-check:focus + .btn, .btn:focus {
   outline: none;
   box-shadow: none;
+}
+
+.name {
+  display: inline-block;
 }
 
