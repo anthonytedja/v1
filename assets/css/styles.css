@@ -8,6 +8,7 @@
   --link-color: #8CC8FF;
   --logo-transform: rotate(180deg) scale(1.2);
   --border-color: #282828;
+  --name-hover: #8CC8FF;
 }
 
 [anthonytedja-data-theme="light"] {
@@ -20,6 +21,7 @@
   --link-color: #212529;
   --logo-transform: rotate(0deg) scale(1.2);
   --border-color: #dee2e6;
+  --name-hover: #8CC8FF;
 }
 
 @keyframes bounce {
@@ -185,5 +187,22 @@ a:hover {
 
 .agent-3 {
   animation-delay: 0.8s;
+}
+
+@media (hover: hover) {
+  #name > span:hover {
+    animation: bounce 1s infinite;
+    color: var(--name-hover);
+  }
+}
+
+#name > span {
+  display: inline-block;
+  transition: all ease 0.2s;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+  outline: none;
+  box-shadow: none;
 }
 
