@@ -210,3 +210,7 @@ a:hover {
   display: inline-block;
 }
 
+#projects-row .col-lg-6:nth-child(n + 5) {
+  display: none;
+}
+
