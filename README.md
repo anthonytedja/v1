@@ -10,6 +10,7 @@
 - Scroll Animations with [AOS library](https://github.com/michalsnik/aos)
 - Ajax GET GitHub API for Repo Stars and Forks
 - Dynamic Favicon
+- Custom 404 Page
 
 ## Built With
 
