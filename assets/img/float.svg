@@ -18,7 +18,7 @@
         <style>
             @keyframes float1 {
                 0%{transform: translate(0, 0)}
-                50%{transform: translate(-10px, 0)}
+                50%{transform: translate(-40px, 0)}
                 100%{transform: translate(0, 0)}
             }
 
@@ -28,7 +28,7 @@
 
             @keyframes float2 {
                 0%{transform: translate(0, 0)}
-                50%{transform: translate(-5px, -5px)}
+                50%{transform: translate(-20px, -20px)}
                 100%{transform: translate(0, 0)}
             }
 
@@ -38,7 +38,7 @@
 
             @keyframes float3 {
                 0%{transform: translate(0, 0)}
-                50%{transform: translate(0, -10px)}
+                50%{transform: translate(0, -40px)}
                 100%{transform: translate(0, 0)}
             }
 
