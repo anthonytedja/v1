@@ -10,7 +10,7 @@
   --border-color: #282828;
   --name-hover: #d63384;
   --name-shadow: #6d7989;
-  --border-outline: #d4d4d4;
+  --border-outline: #b0c4de;
 }
 
 [anthonytedja-data-theme="light"] {
@@ -25,7 +25,7 @@
   --border-color: #dee2e6;
   --name-hover: #ff51a8;
   --name-shadow: #6d7989;
-  --border-outline: #212529;
+  --border-outline: #b0c4de;
 }
 
 @keyframes bounce {
