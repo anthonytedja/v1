@@ -9,6 +9,7 @@
   --logo-transform: rotate(180deg) scale(1.2);
   --border-color: #282828;
   --name-hover: #d63384;
+  --name-shadow: #6d7989;
 }
 
 [anthonytedja-data-theme="light"] {
@@ -22,6 +23,7 @@
   --logo-transform: rotate(0deg) scale(1.2);
   --border-color: #dee2e6;
   --name-hover: #ff51a8;
+  --name-shadow: #6d7989;
 }
 
 @keyframes bounce {

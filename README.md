@@ -11,6 +11,7 @@
 - Ajax GET GitHub API for Repo Stars and Forks
 - Custom 404 Page with Animated Background
 - Dynamic Favicon matches theme settings
+- Mouseover for moving text shadow
 
 ## Built With
 
