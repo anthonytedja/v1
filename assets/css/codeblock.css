@@ -74,6 +74,7 @@
   border-radius: 0.25em;
   font-family: courier,monospace;
   color: white;
+  padding-bottom: 1rem;
 }
 
 .code-footer {
