@@ -40,3 +40,27 @@ $('a[href*="#"]')
 $('#profile-picture').click(function(){
     window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
   });
+
+$('#codeblock-icon-email').click(function(){
+    window.location.href = "mailto:anthony.tedja@mail.utoronto.ca";
+  });
+
+$('#codeblock-icon-github').click(function(){
+    window.location.href = "https://github.com/anthonytedja";
+  });
+
+$('#codeblock-icon-linkedin').click(function(){
+    window.location.href = "https://www.linkedin.com/in/anthonytedja";
+  });
+
+$('#codeblock-icon-devpost').click(function(){
+    window.location.href = "https://devpost.com/anthonytedja";
+  });
+
+$('#codeblock-icon-unsplash').click(function(){
+    window.location.href = "https://unsplash.com/@anthonytedja";
+  });
+
+$('#codeblock-icon-instagram').click(function(){
+    window.location.href = "https://www.instagram.com/anthonytedja";
+  });

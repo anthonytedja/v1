@@ -16,7 +16,10 @@
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/512x512dark.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/codeblock.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/typing.css">
@@ -62,7 +65,7 @@
                         <h2 class="display-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="30" data-aos-delay="700" data-aos-once="true" style="font-weight: 500;">🖐 hello world!</h2>
                         <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="30" data-aos-delay="800" data-aos-once="true">Hey, I'm <strong>Anthony</strong>, a Computer Science Specialist 💻 at the University of Toronto. My interests are in Web Development, Machine Learning and Artificial Intelligence.<br></p>
                         <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="30" data-aos-delay="850" data-aos-once="true">A few technologies I have been working with recently are React, Node.js, and OpenCV. I'm now learning how to use Amazon Web and Google Cloud Services.</p>
-                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="30" data-aos-delay="900" data-aos-once="true">Outside of Academics, I enjoy playing guitar 🎸 as well as taking photos 📷. I'm most likely playing volleyball 🏐 or watching a kdrama 🎬 at the moment!<br></p>
+                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="30" data-aos-delay="900" data-aos-once="true">Outside of Academics, I enjoy playing guitar 🎸 as well as taking photos 📷. I'm most likely playing volleyball 🏐 or watching a kdrama&nbsp;🎬 at the moment!<br></p>
                     </div>
                 </div>
             </div>
@@ -141,7 +144,7 @@
                         </div><img class="img-fluid" src="assets/img/arduino.jpg">
                     </a></div>
                 <div class="col" style="display: flex;justify-content: center;transition: all ease 0.2s;">
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="800" data-aos-once="true"><button class="btn btn-primary links" id="more-projects" type="button" style="background-color: lightsteelblue;border: none;box-shadow: none;color: var(--main-bg-color);margin: 2rem;">more</button></div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="150" data-aos-delay="800" data-aos-once="true"><button class="btn btn-primary links" id="more-projects" type="button" style="background-color: lightsteelblue;border: none;box-shadow: none;color: var(--main-bg-color);margin: 2rem;">more</button></div>
                 </div>
             </div>
         </div>
@@ -156,24 +159,49 @@
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" style="display: flex;justify-content: center;padding: 2rem;"><img id="click" src="assets/img/click.png" style="max-height: 6rem;transition: all ease 0.2s;"><img class="rounded-circle img-fluid links" id="cat" src="assets/img/cat.gif" style="max-width: 75%;border: none;border-radius: 0 !important;"></div>
                 </div>
                 <div class="col-lg-6 order-lg-2" style="padding: 0;">
-                    <div style="padding: 2rem;color: var(--main-text-color) !important;transition: all ease 0.2s;">
-                        <h2 class="display-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="30" data-aos-delay="700" data-aos-once="true" style="font-weight: 500;">🤙&nbsp;shameless plug</h2>
-                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="30" data-aos-delay="800" data-aos-once="true">Checkout my&nbsp;GitHub&nbsp;or&nbsp;Devpost&nbsp;for more projects.<br></p>
-                        <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="30" data-aos-delay="850" data-aos-once="true">Click <a href="/sociallife">here</a>&nbsp;to see my social life.<br></p>
-                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="30" data-aos-delay="900" data-aos-once="true"><a href="https://github.com/anthonytedja" style="font-size: 40px;padding-right: 10px;"><i class="fa fa-github links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a><a href="https://devpost.com/anthonytedja" style="font-size: 38px;padding: 0px 0px 0px 6px;text-decoration: none;"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="links" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 280.3 242" width="1em" height="1em" fill="none" enable-background="new 0 0 24 24" xml:space="preserve" style="color: var(--main-text-color) !important;transition: all ease 0.2s;margin-top: -8px;">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="30" data-aos-delay="700" data-aos-once="true" style="padding: 2rem;">
+                        <div class="code-window" style="transition: all ease 0.2s;">
+                            <div class="code-header">
+                                <div class="code-close-button"></div>
+                                <div class="code-minimize-button"></div>
+                                <div class="code-expand-button"></div><span class="code-filename">ShamelessPlug.js</span>
+                            </div>
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true" class="code-container" style="position: relative;"><code class="code-block">$.ajax({
+  url: <span class="code-json-v">"https://anthonytedja.github.io"</span>,
+  method: <span class="code-json-v">"GET"</span>,
+  dataType: <span class="code-json-v">"json"</span>,
+  success: <span class="code-json-f">function</span>(res) {
+    $(<span class="code-json-k">"#theme"</span>).text(<span id="code-website-theme" class="code-json-v"></span>);
+    $(<span class="code-json-k">"#contact"</span>).text(<span class="code-json-v">"@anthonytedja"</span>);
+    $(<span class="code-json-k">"#open-for-work"</span>).val(true);
+    $(<span class="code-json-k">"#social-life"</span>).val(<a href="/sociallife" style="color: white">here</a>);
+  }
+});</code></div>
+                            <div class="code-footer">
+                                <ul class="code-languages">
+                                    <li class="links" data-selected="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630" data-v-7701080c=""><rect width="630" height="630" fill="#f7df1e"></rect><path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"></path></svg></li>
+                                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750" data-aos-once="true" id="codeblock-icon-email"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="links" style="font-size: 1.5rem;">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V20C22 21.1046 21.1046 22 20 22H8.1477C8.09893 22.0036 8.04968 22.0054 8 22.0054H4C2.89543 22.0054 2 21.1099 2 20.0054V5ZM5 4H19C19.5523 4 20 4.44771 20 5V14H16C14.8954 14 14 14.8954 14 16V17H10V16.0054C10 14.9008 9.10457 14.0054 8 14.0054H4V5C4 4.44772 4.44771 4 5 4Z" fill="currentColor"></path>
+                                        </svg></li>
+                                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true" id="codeblock-icon-github"><i class="fab fa-github links"></i></li>
+                                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="850" data-aos-once="true" id="codeblock-icon-linkedin"><i class="fab fa-linkedin links"></i></li>
+                                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" data-aos-once="true" id="codeblock-icon-devpost"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="links" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280.3 242" width="1em" height="1em" fill="white" enable-background="new 0 0 24 24" xml:space="preserve" style="font-size: 1.45rem; color: #fff; margin-top: -1px;">
 <g id="XMLID_1_">
-	<path id="XMLID_6_" fill="currentColor" d="M133.7,76H118v90h14.7c30.9,0,45.1-18.1,45.1-45C177.8,90.9,164.9,76,133.7,76z"/>
-	<path id="XMLID_9_" fill="currentColor" d="M210.2,0H70.1L0,121l70.1,121h140.1l70.1-121L210.2,0z M132.7,195H89V47h45.8c42.1,0,73.3,20.1,73.3,74
+	<path id="XMLID_6_" fill="white" d="M133.7,76H118v90h14.7c30.9,0,45.1-18.1,45.1-45C177.8,90.9,164.9,76,133.7,76z"/>
+	<path id="XMLID_9_" fill="white" d="M210.2,0H70.1L0,121l70.1,121h140.1l70.1-121L210.2,0z M132.7,195H89V47h45.8c42.1,0,73.3,20.1,73.3,74
 		C208.1,172.8,170.6,195,132.7,195z"/>
 </g>
 </svg>
-</a><a href="mailto:anthony.tedja@mail.utoronto.ca" style="font-size: 40px;padding: 0px 6px 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;margin-top: -8px;">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 5C2 3.34315 3.34315 2 5 2H19C20.6569 2 22 3.34315 22 5V20C22 21.1046 21.1046 22 20 22H8.1477C8.09893 22.0036 8.04968 22.0054 8 22.0054H4C2.89543 22.0054 2 21.1099 2 20.0054V5ZM5 4H19C19.5523 4 20 4.44771 20 5V14H16C14.8954 14 14 14.8954 14 16V17H10V16.0054C10 14.9008 9.10457 14.0054 8 14.0054H4V5C4 4.44772 4.44771 4 5 4Z" fill="currentColor"></path>
-                                </svg></a><a href="https://www.linkedin.com/in/anthonytedja" style="font-size: 40px;padding: 0px 10px 0px;"><i class="fa fa-linkedin-square links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a><a class="links" href="https://unsplash.com/@anthonytedja" style="font-size: 50px;/*padding: 0px 1px 0px;*/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;margin-top: -3px;" title="Unsplash">
-                                    <path d="M15 4.5H9V8.5H15V4.5Z" fill="currentColor"></path>
-                                    <path d="M4 10.5H9V14.5H15V10.5H20V19.5H4V10.5Z" fill="currentColor"></path>
-                                </svg></a><a href="https://www.instagram.com/anthonytedja" style="font-size: 40px;padding-left: 10px;"><i class="fa fa-instagram links" style="color: var(--main-text-color) !important;transition: all ease 0.2s;"></i></a></div>
+</li>
+                                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="950" data-aos-once="true" id="codeblock-icon-unsplash"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="links" style="font-size: 1.7rem;margin: -2px -2px -1px -2px;">
+                                            <path d="M15 4.5H9V8.5H15V4.5Z" fill="currentColor"></path>
+                                            <path d="M4 10.5H9V14.5H15V10.5H20V19.5H4V10.5Z" fill="currentColor"></path>
+                                        </svg></li>
+                                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-once="true" id="codeblock-icon-instagram"><i class="fab fa-instagram links" style="font-size: 1.4rem;"></i></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
