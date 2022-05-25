@@ -10,6 +10,7 @@
 - Scroll Animations with [AOS library](https://github.com/michalsnik/aos)
 - Ajax GET GitHub API for Repo Stars and Forks
 - Custom 404 Page with Animated Background
+- Google Analytics for Website Traffic
 - Dynamic Favicon matches theme settings
 - Mouseover for moving text shadow
 
