@@ -124,6 +124,7 @@
   cursor: pointer;
   margin-bottom: 0;
   color: var(--code-language-color);
+  background-color: transparent;
   transition: all ease 0.2s;
 }
 
@@ -136,7 +137,7 @@
 
 .code-languages li[data-selected] {
   background-color: var(--code-selected-color);
-  transition: all ease 0.2s;
+  transition: all ease 0.2s !important;
 }
 
 .code-languages svg, .code-languages i {
