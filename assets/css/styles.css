@@ -138,8 +138,8 @@
 #logo {
   /*transform: rotate(-360deg);*/
   max-height: 3rem;
-  margin-right: 20px;
   transition: all ease 0.5s;
+  margin-left: 1em;
 }
 
 @media (hover: hover) {
