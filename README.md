@@ -6,13 +6,13 @@
 
 ## Features
 
-- JavaScript Local Storage saves theme settings
 - Scroll Animations with [AOS library](https://github.com/michalsnik/aos)
-- Ajax GET GitHub API for Repo Stars and Forks
+- JS Local Storage saves Theme Settings & Visitor Count
+- Ajax requests GitHub API for Repo Stars and Forks
 - Custom 404 Page with Animated Background
-- Google Analytics for Website Traffic
-- Dynamic Favicon matches theme settings
-- Mouseover for moving text shadow
+- Google Analytics for Website Traffic Tracking
+- Dynamic Favicon matches Theme Settings
+- Mouseover for Moving Text Shadow
 
 ## Built With
 
