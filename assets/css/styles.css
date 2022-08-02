@@ -14,7 +14,7 @@
   --toast-bg: rgba(28, 28, 28, 0.85);
   --toast-border: rgba(255, 255, 255, 0.1);
   --toast-border2: rgba(255, 255, 255, 0.05);
-  --percent: 100%;
+  --toast-close: invert(100%);
 }
 
 [anthonytedja-data-theme="light"] {
@@ -33,7 +33,7 @@
   --toast-bg: rgba(255,255,255,.85);
   --toast-border: rgba(0, 0, 0, .1);
   --toast-border2: rgba(0, 0, 0, .05);
-  --percent: 0%;
+  --toast-close: none;
 }
 
 @keyframes bounce {
