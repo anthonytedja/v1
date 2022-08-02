@@ -11,6 +11,10 @@
   --name-hover: #d63384;
   --name-shadow: #6d7989;
   --border-outline: #b0c4de;
+  --toast-bg: rgba(28, 28, 28, 0.85);
+  --toast-border: rgba(255, 255, 255, 0.1);
+  --toast-border2: rgba(255, 255, 255, 0.05);
+  --percent: 100%;
 }
 
 [anthonytedja-data-theme="light"] {
@@ -26,6 +30,10 @@
   --name-hover: #ff51a8;
   --name-shadow: #6d7989;
   --border-outline: #b0c4de;
+  --toast-bg: rgba(255,255,255,.85);
+  --toast-border: rgba(0, 0, 0, .1);
+  --toast-border2: rgba(0, 0, 0, .05);
+  --percent: 0%;
 }
 
 @keyframes bounce {
