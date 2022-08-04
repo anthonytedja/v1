@@ -6,8 +6,8 @@
 
 ## Features
 
-- Easter Eggs?
-- Scroll Animations with [AOS library](https://github.com/michalsnik/aos)
+- Possible Easter Eggs...
+- Scroll & Load Animations with [AOS library](https://github.com/michalsnik/aos)
 - JS Local Storage saves Theme Settings & Visitor Count
 - Ajax requests GitHub API for Repo Stars and Forks
 - Custom 404 Page with Animated Background
