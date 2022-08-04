@@ -5,7 +5,7 @@ if (element) {
 
     let visitCount = localStorage.getItem('anthonytedja-visit-count');
 
-    if (!visitCount) {
+    if (!visitCount || !Number.isInteger(parseInt(visitCount))) {
         visitCount = 1;
         $('#toast-paragraph').text(`Hey, looks like it's your first time here! Click on the logo to switch themes, or the photo in my bio for a cool animation :)`);
         toast._config.autohide = false;
