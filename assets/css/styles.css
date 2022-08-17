@@ -15,6 +15,7 @@
   --toast-border: rgba(255, 255, 255, 0.1);
   --toast-border2: rgba(255, 255, 255, 0.05);
   --toast-close: invert(100%);
+  --navbar-box: rgba(255, 255, 255, 0.03);
 }
 
 [anthonytedja-data-theme="light"] {
@@ -34,6 +35,7 @@
   --toast-border: rgba(0, 0, 0, .1);
   --toast-border2: rgba(0, 0, 0, .05);
   --toast-close: none;
+  --navbar-box: rgba(0, 0, 0, 0.03);
 }
 
 @keyframes bounce {
@@ -236,7 +238,7 @@ body {
 }
 
 .navbarblur {
-  box-shadow: inset 0px 0px 5px 5000px var(--toast-border2);
+  box-shadow: inset 0px 0px 5px 5000px var(--navbar-box);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
@@ -248,6 +250,18 @@ body {
     box-shadow: none;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
+  }
+}
+
+#navbar-logo {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  #navbar-logo {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
