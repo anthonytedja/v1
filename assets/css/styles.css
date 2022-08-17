@@ -235,3 +235,19 @@ body {
   box-shadow: none !important;
 }
 
+.navbarblur {
+  box-shadow: inset 0px 0px 5px 5000px var(--toast-border2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  transition: all ease 0.2s;
+}
+
+@media (min-width: 768px) {
+  .navbarblur {
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
