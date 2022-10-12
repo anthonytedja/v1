@@ -265,3 +265,7 @@ body {
   }
 }
 
+.btn:active:focus {
+  box-shadow: none;
+}
+
