@@ -23,7 +23,7 @@ function light() {
     $('#click').css('filter', 'none');
     $('#hello').css('filter', 'invert(15%)');
     setTimeout(() => {
-		$("#logo").attr("src","light.svg");
+		$("#logo").attr("src","/assets/img/light.svg");
 	}, 100);
 }
 function dark() {
@@ -36,7 +36,7 @@ function dark() {
     $('#click').css('filter', 'invert(90%)');
     $('#hello').css('filter', 'invert(80%)');
     setTimeout(() => {
-		$("#logo").attr("src","dark.svg");
+		$("#logo").attr("src","/assets/img/dark.svg");
 	}, 100);
 }
 
