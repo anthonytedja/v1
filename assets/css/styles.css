@@ -147,7 +147,7 @@
 
 #logo {
   /*transform: rotate(-360deg);*/
-  max-height: 3rem;
+  max-height: 2.8rem;
   transition: all ease 0.5s;
   margin-left: 1em;
 }
