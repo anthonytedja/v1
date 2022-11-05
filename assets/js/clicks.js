@@ -64,3 +64,9 @@ $('#codeblock-icon-unsplash').click(function(){
 $('#codeblock-icon-instagram').click(function(){
     window.location.href = "https://www.instagram.com/anthonytedja";
   });
+
+// Disable image dragging and right click saves
+$('img').on('dragstart', function(event) { event.preventDefault(); });
+$('img').bind('contextmenu', function(e) {
+    return false;
+}); 

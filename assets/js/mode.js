@@ -19,7 +19,7 @@ function light() {
 	changeFavicon('dark');
     $('#code-website-theme').text('"light"');
     $('#logo').css('filter', 'invert(12%)');
-    $('#logo').css('transform', 'rotate(0)');
+    $('#logo').css('transform', 'rotate(0deg)');
     $('#click').css('filter', 'none');
     $('#hello').css('filter', 'invert(15%)');
     setTimeout(() => {

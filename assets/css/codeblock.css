@@ -93,7 +93,6 @@
   line-height: 1.25;
   padding: 0.1em 0.2em;
   border-radius: 0.25em;
-  font-family: courier,monospace;
   color: var(--code-text-color);
   padding-bottom: 1rem;
   transition: all ease 0.2s;
