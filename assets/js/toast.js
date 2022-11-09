@@ -16,5 +16,5 @@ if (element) {
 
     localStorage.setItem('anthonytedja-visit-count', visitCount);
 
-    setTimeout(() => toast.show(), 2000);
+    setTimeout(() => toast.show(), 3000);
 }
