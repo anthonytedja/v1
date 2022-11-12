@@ -2,8 +2,8 @@ $('#more-projects').click(function () {
     $(this).parent().hide();
     $('#projects-row .col-lg-6:hidden').removeClass('aos-animate');
     $(this).parent().removeClass('aos-animate');
-    
-    setTimeout(function() {
+
+    setTimeout(function () {
         $('#projects-row .col-lg-6:hidden').addClass('aos-animate');
         $(this).parent().addClass('aos-animate');
     }, 100);

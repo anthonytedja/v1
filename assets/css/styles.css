@@ -7,7 +7,9 @@
   --arrow-color: #F58f70;
   --bg-shade: soft-light;
   --link-color: #8CC8FF;
-  --logo-transform: rotate(200deg) scale(1.2);
+  --logo-filter: invert(80%);
+  --logo-transform: rotate(180deg);
+  --logo-transform-hover: rotate(200deg) scale(1.2);
   --border-color: #282828;
   --name-hover: #F58f70;
   --name-shadow: #6d7989;
@@ -17,6 +19,8 @@
   --toast-border2: rgba(255, 255, 255, 0.05);
   --toast-close: invert(100%);
   --navbar-box: rgba(255, 255, 255, 0.03);
+  --hello-img-filter: invert(80%);
+  --click-img-filter: invert(90%);
 }
 
 [anthonytedja-data-theme="light"] {
@@ -28,7 +32,9 @@
   --arrow-color: #212529;
   --bg-shade: normal;
   --link-color: #212529;
-  --logo-transform: rotate(-20deg) scale(1.2);
+  --logo-filter: invert(12%);
+  --logo-transform: rotate(0deg);
+  --logo-transform-hover: rotate(-20deg) scale(1.2);
   --border-color: #dee2e6;
   --name-hover: #ff6db6;
   --name-shadow: #6d7989;
@@ -38,6 +44,8 @@
   --toast-border2: rgba(0, 0, 0, .05);
   --toast-close: none;
   --navbar-box: rgba(0, 0, 0, 0.03);
+  --hello-img-filter: invert(15%);
+  --click-img-filter: none;
 }
 
 @keyframes bounce {
@@ -143,13 +151,14 @@
   #logo:hover {
     opacity: 0.5;
     cursor: pointer;
-    transform: var(--logo-transform) !important;
+    transform: var(--logo-transform-hover) !important;
   }
 }
 
 #logo {
-  /*transform: rotate(-360deg);*/
+  transform: var(--logo-transform);
   max-height: 2.8rem;
+  filter: var(--logo-filter);
   transition: all ease 0.5s;
   margin-left: 1em;
 }

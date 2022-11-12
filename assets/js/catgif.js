@@ -1,22 +1,21 @@
 const touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
-document.getElementById('cat').addEventListener(touchEvent, animate);
+const cat = $('#cat');
 
-function animate() {
-	if (!e) var e = window.event;
-	e.cancelBubble = true;
-	if (e.stopPropagation) e.stopPropagation();
+// Animate Cat on Clicks
+if (cat) {
+	cat.on(touchEvent, animate);
+	function animate(e) {
+		if (!e) var e = window.event;
+		e.cancelBubble = true;
+		if (e.stopPropagation) e.stopPropagation();
+		if (animate.isRunning) return;
 
-	if (animate.isRunning) return;
-	animate.isRunning = true;
+		animate.isRunning = true;
+		cat.attr('src', '/assets/img/cat-animate.gif');
 
-	console.log('animate');
-	image = document.getElementById('cat');
-	image.src = '/assets/img/cat-animate.gif';
-
-	setTimeout(() => {
-		image.src = '/assets/img/cat.gif';
-		animate.isRunning = false;
-	}, 3675);
+		setTimeout(() => {
+			cat.attr('src', '/assets/img/cat.gif');
+			animate.isRunning = false;
+		}, 3675);
+	}
 }
-
-var image = (new Image().src = '/assets/img/cat.gif');

@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     var animationDelay = 2500,
         barAnimationDelay = 3800,
         barWaiting = barAnimationDelay - 3e3,
@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
         animateHeadline($(".cd-headline"))
     }
     function singleLetters($words) {
-        $words.each(function() {
+        $words.each(function () {
             var word = $(this),
                 letters = word.text().split(""),
                 selected = word.hasClass("is-visible");
@@ -29,11 +29,11 @@ jQuery(document).ready(function($) {
     }
     function animateHeadline($headlines) {
         var duration = animationDelay;
-        $headlines.each(function() {
+        $headlines.each(function () {
             var headline = $(this);
             if (headline.hasClass("loading-bar")) {
                 duration = barAnimationDelay;
-                setTimeout(function() {
+                setTimeout(function () {
                     headline.find(".cd-words-wrapper").addClass("is-loading")
                 }, barWaiting)
             } else if (headline.hasClass("clip")) {
@@ -43,14 +43,14 @@ jQuery(document).ready(function($) {
             } else if (!headline.hasClass("type")) {
                 var words = headline.find(".cd-words-wrapper b"),
                     width = 0;
-                words.each(function() {
+                words.each(function () {
                     var wordWidth = $(this).width();
                     if (wordWidth > width)
                         width = wordWidth
                 });
                 headline.find(".cd-words-wrapper").css("width", width)
             }
-            setTimeout(function() {
+            setTimeout(function () {
                 hideWord(headline.find(".is-visible").eq(0))
             }, duration)
         })
@@ -60,11 +60,11 @@ jQuery(document).ready(function($) {
         if ($word.parents(".cd-headline").hasClass("type")) {
             var parentSpan = $word.parent(".cd-words-wrapper");
             parentSpan.addClass("selected").removeClass("waiting");
-            setTimeout(function() {
+            setTimeout(function () {
                 parentSpan.removeClass("selected");
                 $word.removeClass("is-visible").addClass("is-hidden").children("i").removeClass("in").addClass("out")
             }, selectionDuration);
-            setTimeout(function() {
+            setTimeout(function () {
                 showWord(nextWord, typeLettersDelay)
             }, typeAnimationDelay)
         } else if ($word.parents(".cd-headline").hasClass("letters")) {
@@ -74,22 +74,22 @@ jQuery(document).ready(function($) {
         } else if ($word.parents(".cd-headline").hasClass("clip")) {
             $word.parents(".cd-words-wrapper").animate({
                 width: "2px"
-            }, revealDuration, function() {
+            }, revealDuration, function () {
                 switchWord($word, nextWord);
                 showWord(nextWord)
             })
         } else if ($word.parents(".cd-headline").hasClass("loading-bar")) {
             $word.parents(".cd-words-wrapper").removeClass("is-loading");
             switchWord($word, nextWord);
-            setTimeout(function() {
+            setTimeout(function () {
                 hideWord(nextWord)
             }, barAnimationDelay);
-            setTimeout(function() {
+            setTimeout(function () {
                 $word.parents(".cd-words-wrapper").addClass("is-loading")
             }, barWaiting)
         } else {
             switchWord($word, nextWord);
-            setTimeout(function() {
+            setTimeout(function () {
                 hideWord(nextWord)
             }, animationDelay)
         }
@@ -101,8 +101,8 @@ jQuery(document).ready(function($) {
         } else if ($word.parents(".cd-headline").hasClass("clip")) {
             $word.parents(".cd-words-wrapper").animate({
                 width: $word.width() + 10
-            }, revealDuration, function() {
-                setTimeout(function() {
+            }, revealDuration, function () {
+                setTimeout(function () {
                     hideWord($word)
                 }, revealAnimationDelay)
             })
@@ -111,11 +111,11 @@ jQuery(document).ready(function($) {
     function hideLetter($letter, $word, $bool, $duration) {
         $letter.removeClass("in").addClass("out");
         if (!$letter.is(":last-child")) {
-            setTimeout(function() {
+            setTimeout(function () {
                 hideLetter($letter.next(), $word, $bool, $duration)
             }, $duration)
         } else if ($bool) {
-            setTimeout(function() {
+            setTimeout(function () {
                 hideWord(takeNext($word))
             }, animationDelay)
         }
@@ -127,17 +127,17 @@ jQuery(document).ready(function($) {
     function showLetter($letter, $word, $bool, $duration) {
         $letter.addClass("in").removeClass("out");
         if (!$letter.is(":last-child")) {
-            setTimeout(function() {
+            setTimeout(function () {
                 showLetter($letter.next(), $word, $bool, $duration)
             }, $duration)
         } else {
             if ($word.parents(".cd-headline").hasClass("type")) {
-                setTimeout(function() {
+                setTimeout(function () {
                     $word.parents(".cd-words-wrapper").addClass("waiting")
                 }, 200)
             }
             if (!$bool) {
-                setTimeout(function() {
+                setTimeout(function () {
                     hideWord($word)
                 }, animationDelay)
             }

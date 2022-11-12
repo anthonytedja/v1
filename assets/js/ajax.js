@@ -3,9 +3,8 @@ $.ajax({
 	url: 'https://api.github.com/repos/anthonytedja/anthonytedja.github.io',
 	method: 'GET',
 	dataType: 'json',
-	success: function(data) {
-        $('#github-stars').text(data.stargazers_count);
-        $('#github-forks').text(data.forks_count);
-		}
+	success: function (data) {
+		$('#github-stars').text(data.stargazers_count);
+		$('#github-forks').text(data.forks_count);
 	}
-);
+});

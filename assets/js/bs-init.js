@@ -10,7 +10,9 @@ if (window.innerWidth < 768) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-	AOS && AOS.init();
+	if ('AOS' in window) {
+		AOS.init();
+	}
 
 	var toastTriggers = document.querySelectorAll('[data-bs-toggle="toast"]');
 

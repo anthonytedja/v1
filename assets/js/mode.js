@@ -1,48 +1,33 @@
-document.querySelector('#logo').addEventListener('click', function(e) {
-	const currentTheme = localStorage.getItem('anthonytedja-data-theme');
-	if (currentTheme === 'dark') {
-		light();
-	} else {
-		dark();
-	}
+// Theme Settings & Toggles
+// Note: Header script sets anthonytedja-data-theme according to local storage
+localStorage.getItem('anthonytedja-data-theme') === 'light' ? light() : dark();
+
+document.querySelector('#logo').addEventListener('click', function () {
+	document.documentElement.getAttribute('anthonytedja-data-theme') === 'light' ? dark() : light();
 });
 
-function changeFavicon(mode) {
-	document.querySelectorAll("link[type='image/png']").forEach(function(e) {
-		e.href = 'assets/img/' + e.sizes.value + mode + '.png';
-	});
-}
-
 function light() {
-	localStorage.setItem('anthonytedja-data-theme', 'light');
 	document.documentElement.setAttribute('anthonytedja-data-theme', 'light');
+	$('#code-website-theme').text('"light"');
+	setTimeout(() => {
+		$("#logo").attr("src", "/assets/img/light.svg");
+	}, 100);
+	localStorage.setItem('anthonytedja-data-theme', 'light');
 	changeFavicon('dark');
-    $('#code-website-theme').text('"light"');
-    $('#logo').css('filter', 'invert(12%)');
-    $('#logo').css('transform', 'rotate(0deg)');
-    $('#click').css('filter', 'none');
-    $('#hello').css('filter', 'invert(15%)');
-    setTimeout(() => {
-		$("#logo").attr("src","/assets/img/light.svg");
-	}, 100);
-}
-function dark() {
-	localStorage.setItem('anthonytedja-data-theme', 'dark');
-	document.documentElement.setAttribute('anthonytedja-data-theme', 'dark');
-	changeFavicon('light');
-    $('#code-website-theme').text('"dark"');
-    $('#logo').css('filter', 'invert(80%)');
-    $('#logo').css('transform', 'rotate(180deg)');
-    $('#click').css('filter', 'invert(90%)');
-    $('#hello').css('filter', 'invert(80%)');
-    setTimeout(() => {
-		$("#logo").attr("src","/assets/img/dark.svg");
-	}, 100);
 }
 
-let currentTheme = localStorage.getItem('anthonytedja-data-theme');
-if (currentTheme === 'light') {
-	light();
-} else {
-	dark();
+function dark() {
+	document.documentElement.setAttribute('anthonytedja-data-theme', 'dark');
+	$('#code-website-theme').text('"dark"');
+	setTimeout(() => {
+		$("#logo").attr("src", "/assets/img/dark.svg");
+	}, 100);
+	localStorage.setItem('anthonytedja-data-theme', 'dark');
+	changeFavicon('light');
+}
+
+function changeFavicon(mode) {
+	document.querySelectorAll("link[type='image/png']").forEach(function (e) {
+		e.href = 'assets/img/favicon/' + e.sizes.value + mode + '.png';
+	});
 }
