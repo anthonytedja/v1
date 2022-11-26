@@ -73,54 +73,52 @@
     -->
 </head>
 
-<body id="page-top" ontouchstart="" style="background-color: var(--main-bg-color) !important;transition: all ease 0.2s;/*position: relative;*/">
-    <div class="toast-container position-fixed p-4" style="z-index: 100000;right: 0px;bottom: 0px;">
-        <div class="toast fade pulse animated hide" role="alert" id="toast" aria-live="assertive" aria-atomic="true" style="border-radius: 0.75rem;width: 375px;background-color: var(--toast-bg);border: 1px solid var(--toast-border);transition: all ease 0.2s;">
-            <div class="toast-header" style="border-radius: 0.75rem 0.75rem 0 0;background-color: var(--toast-bg);border-bottom: 1px solid var(--toast-border2);transition: all ease 0.2s;"><img class="me-2 rounded-circle noselect" src="assets/img/avatar.jpg" style="max-height: 2rem;"><strong class="me-auto fw-semibold">@anthonytedja</strong><small>just now</small><button class="btn-close ms-2 me-0" data-bs-dismiss="toast" aria-label="Close" type="button" style="transition: all ease 0.2s;-webkit-filter: var(--toast-close);filter: var(--toast-close);"></button></div>
-            <div class="toast-body" role="alert" style="color: var(--main-text-color) !important;transition: all ease 0.2s;">
+<body id="page-top" ontouchstart="">
+    <div class="toast-container position-fixed p-4 bottom-0 end-0">
+        <div class="toast fade pulse animated hide" role="alert" id="toast" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header"><img class="me-2 rounded-circle noselect" src="assets/img/avatar.jpg" style="max-height: 2rem;"><strong class="me-auto fw-semibold">@anthonytedja</strong><small>just now</small><button class="btn-close ms-2 me-0" data-bs-dismiss="toast" aria-label="Close" type="button"></button></div>
+            <div class="toast-body" role="alert">
                 <p id="toast-paragraph" class="mt-2"></p>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top navbarblur" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200" data-aos-once="true" id="mainNav" style="margin: 0.5em;">
-        <div class="container"><img id="logo" class="links noselect" src="assets/img/dark.svg"><a class="navbar-brand links" id="navbar-logo" href="#page-top" style="font-weight: 600;color: var(--main-text-color) !important;transition: all ease 0.2s;padding: 0 0.5rem;">anthonytedja</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right links" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="color: var(--main-text-color) !important;transition: all ease 0.2s;/*border-color: var(--main-text-color) !important;*/border: 2px solid transparent;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" style="margin: 0.5rem 0;font-size: 1.8rem;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navbarblur" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200" data-aos-once="true" id="mainNav">
+        <div class="container"><img id="logo" class="links noselect" src="assets/img/dark.svg"><a class="navbar-brand links" id="navbar-logo" href="#page-top">anthonytedja</a><button data-bs-toggle="collapse" class="navbar-toggler links" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" style="margin: 0.5rem 0;font-size: 1.8rem;">
                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                     <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM64 256C64 238.3 78.33 224 96 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H96C78.33 288 64 273.7 64 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"></path>
                 </svg></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive" style="font-weight: 600;">
-                <ul class="navbar-nav ms-auto" style="/*padding: 0px 10px;*//*text-align: right;*/flex-direction: row;align-items: center;justify-content: center;/*margin: 0 1rem;*/">
-                    <li class="nav-item nav-link" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true" style="margin-right: 1rem;"><a class="nav-link links" href="#about" style="text-transform: lowercase;border-radius: 2px;color: var(--main-text-color) !important;transition: all ease 0.2s;">About</a></li>
-                    <li class="nav-item nav-link" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="400" data-aos-once="true" style="margin-right: 1rem;"><a class="nav-link links" href="#projects" style="text-transform: lowercase;border-radius: 2px;color: var(--main-text-color) !important;transition: all ease 0.2s;">projects</a></li>
-                    <li class="nav-item nav-link" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="500" data-aos-once="true"><a class="nav-link links" href="#contact" style="text-transform: lowercase;border-radius: 2px;color: var(--main-text-color) !important;transition: all ease 0.2s;">contact</a></li>
+            <div class="collapse navbar-collapse fw-semibold" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link me-2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true"><a class="nav-link links" href="#about">about</a></li>
+                    <li class="nav-item nav-link mx-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="400" data-aos-once="true"><a class="nav-link links" href="#projects">projects</a></li>
+                    <li class="nav-item nav-link ms-2" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="500" data-aos-once="true"><a class="nav-link links" href="#contact">contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="d-flex masthead" id="frontpage" style="min-height: 100vh;align-items: center;justify-content: center;transition: all ease 0.2s;background-image: url(&quot;assets/img/blank.svg&quot;);background-size: cover;">
-        <div class="masthead-content">
-            <div class="container h-100" style="text-align: center;padding: 2rem;color: var(--main-text-color) !important;transition: all ease 0.2s;margin-top: clamp(0rem, 5vw, 10rem);">
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" style="text-align: left;font-weight: 600;margin-bottom: 0;">Hey there! I'm</p>
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-                    <h1 id="fullname" class="masthead-heading noselect"><span class="name"><span>A</span><span>n</span><span>t</span><span>h</span><span>o</span><span>n</span><span>y</span></span>&nbsp;<span class="name"><span>T</span><span>e</span><span>d</span><span>j</span><span>a</span><span>.</span></span></h1>
-                </div>
-                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="masthead-subheading mt-3" style="text-align: left;font-weight: 600;">Welcome to my page!</h2>
-                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" class="mt-3" style="text-align: left;font-weight: 600;">I bug fixes.</p><a class="btn btn-link btn-circle mt-3 mt-sm-2 links" role="button" href="#about" style="animation: bounce 2s infinite 2s;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="-50" data-aos-delay="1300" data-aos-once="true" style="font-size: 3rem;color: var(--arrow-color) !important;">
-                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                        <path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path>
-                    </svg></a>
+    <header class="d-flex content-section" id="frontpage">
+        <div class="container h-100" id="frontpage-content">
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="text-start mb-0 fw-semibold">Hey there! I'm</p>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
+                <h1 id="fullname" class="noselect text-start"><span class="name"><span>A</span><span>n</span><span>t</span><span>h</span><span>o</span><span>n</span><span>y</span></span>&nbsp;<span class="name"><span>T</span><span>e</span><span>d</span><span>j</span><span>a</span><span>.</span></span></h1>
             </div>
+            <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="text-start mt-3 fw-semibold">Welcome to my page!</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" class="text-start mt-3 fw-semibold">I bug fixes.</p><a class="btn btn-link btn-circle mt-3 mt-sm-2 links" role="button" href="#about" style="animation: bounce 2s infinite 2s;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="-50" data-aos-delay="1300" data-aos-once="true" style="font-size: 3rem;color: var(--arrow-color) !important;">
+                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path>
+                </svg></a>
         </div>
     </header>
-    <section id="about" class="content-section" style="min-height: 100vh;display: flex;align-items: center;justify-content: center;background-color: var(--second-bg-color) !important;transition: all ease 0.2s;">
+    <section id="about" class="content-section">
         <div class="container">
-            <div class="caption v-middle text-center">
+            <div class="caption v-middle text-center noselect">
                 <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span class="noselect" style="color: var(--heading-color);font-weight: 500;">about.</span></strong></span></h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1" style="padding: 0;">
+                <div class="col-lg-6 order-lg-1 p-0">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="400" data-aos-once="true" style="padding: 2rem;">
-                        <div class="noselect" style="display: flex;justify-content: center;"><img class="rounded-circle img-fluid links" id="profile-picture" src="assets/img/guitar.png" style="max-width: 75%;border: none;border-radius: 0% !important;filter: brightness(155%) saturate(110%) contrast(95%) drop-shadow(2px 2px 1px #d36bc6) drop-shadow(-2px 2px 1px #eaaf0f) drop-shadow(2px -2px 1px var(--border-outline)) drop-shadow(-2px -2px 1px var(--border-outline));margin-right: 2rem;" loading="lazy">
-                            <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" style="position: absolute;margin-left: 10rem;"><img id="hello" src="assets/img/hello.png" style="max-height: 5rem;transition: all ease 0.2s;filter: var(--hello-img-filter);"></div>
+                        <div class="noselect" style="display: flex;justify-content: center;"><img id="profile-picture" class="links" src="assets/img/guitar.png">
+                            <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" style="position: absolute;margin-left: 10rem;"><img id="hello" src="assets/img/hello.png"></div>
                         </div>
                     </div>
                 </div>
@@ -135,15 +133,15 @@
             </div>
         </div>
     </section>
-    <section id="projects" class="content-section" style="min-height: 100vh;display: flex;align-items: center;justify-content: center;transition: all ease 0.2s;">
+    <section id="projects" class="content-section">
         <div class="container">
-            <div class="content-section-heading text-center">
+            <div class="content-section-heading text-center noselect">
                 <div class="caption v-middle text-center">
                     <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span class="noselect" style="color: var(--heading-color);font-weight: 500;">projects.</span></strong></span></h1>
                 </div>
             </div>
             <div class="row g-0" id="projects-row">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="400" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/speakCV">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="400" data-aos-once="true"><a class="portfolio-item links" href="https://anthonytedja.github.io/speakCV">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>speakCV.&nbsp;<span style="color: var(--bs-yellow);">DeerHacks 2022 1st Place</span></h2>
@@ -151,7 +149,7 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/speakCV.jpg">
                     </a></div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="500" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/deerhacks">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="500" data-aos-once="true"><a class="portfolio-item links" href="https://anthonytedja.github.io/deerhacks">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>DeerHacks</h2>
@@ -159,7 +157,7 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/deerhacks.jpg">
                     </a></div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="600" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/notion">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="600" data-aos-once="true"><a class="portfolio-item links" href="https://anthonytedja.github.io/notion">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Notion</h2>
@@ -167,7 +165,7 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/notion.jpg">
                     </a></div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="700" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/mips">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="700" data-aos-once="true"><a class="portfolio-item links" href="https://anthonytedja.github.io/mips">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Mips</h2>
@@ -175,15 +173,15 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/mips.jpg">
                     </a></div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="400" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://github.com/anthonytedja/zip">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="400" data-aos-once="true"><a class="portfolio-item links" href="https://shunt.mcss.club">
                         <div class="caption">
                             <div class="caption-content">
-                                <h2>Zip</h2>
-                                <p class="mb-0" style="font-size: 15px !important;">Lossless file compression / decompression with Huffman binary trees.<br></p>
+                                <h2>Scavenger</h2>
+                                <p class="mb-0" style="font-size: 15px !important;">Landing page for MCSS Club's 2022 Scavenger Hunt challenges.<br></p>
                             </div>
-                        </div><img class="img-fluid" src="assets/img/projects/zip.jpg">
+                        </div><img class="img-fluid" src="assets/img/projects/scavenger.jpg">
                     </a></div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="500" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://anthonytedja.github.io/restify">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="500" data-aos-once="true"><a class="portfolio-item links" href="https://anthonytedja.github.io/restify">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Restify</h2>
@@ -191,7 +189,7 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/restify.jpg">
                     </a></div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="600" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://github.com/anthonytedja/bounce">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="600" data-aos-once="true"><a class="portfolio-item links" href="https://github.com/anthonytedja/bounce">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Bounce</h2>
@@ -199,7 +197,7 @@
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/bounce.jpg">
                     </a></div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="700" data-aos-once="true" style="padding: 1rem;"><a class="portfolio-item links" href="https://github.com/anthonytedja/arduino">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="700" data-aos-once="true"><a class="portfolio-item links" href="https://github.com/anthonytedja/arduino">
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Arduino</h2>
@@ -208,20 +206,20 @@
                         </div><img class="img-fluid" src="assets/img/projects/arduino.jpg">
                     </a></div>
                 <div class="col" style="display: flex;justify-content: center;transition: all ease 0.2s;">
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="800" data-aos-once="true"><button class="btn btn-primary links" id="more-projects" type="button" style="background-color: var(--heading-color);border: none;box-shadow: none;color: var(--main-bg-color);margin: 2rem;">more</button></div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="800" data-aos-once="true"><button class="btn btn-primary links" id="more-projects" type="button">more</button></div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact" class="content-section" style="min-height: 100vh;display: flex;align-items: center;justify-content: center;background-color: var(--second-bg-color) !important;transition: all ease 0.2s;">
+    <section id="contact" class="content-section">
         <div class="container">
-            <div class="caption v-middle text-center">
+            <div class="caption v-middle text-center noselect">
                 <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span class="noselect" style="color: var(--heading-color);font-weight: 500;">contact.</span></strong></span></h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-1" style="padding: 0;">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="noselect" style="display: flex;justify-content: center;padding: 2rem;">
-                        <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" style="display: inline-block;max-height: 6rem;"><img id="click" src="assets/img/click.png" style="max-height: 6rem;transition: all ease 0.2s;filter: var(--click-img-filter);"></div><img class="rounded-circle img-fluid links" id="cat" src="assets/img/cat.gif" style="max-width: 75%;border: none;border-radius: 0 !important;">
+                        <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" style="display: inline-block;max-height: 6rem;"><img id="click" src="assets/img/click.png"></div><img id="cat" class="links" src="assets/img/cat.gif">
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-2" style="padding: 0;">
@@ -282,8 +280,8 @@
             </div>
         </div>
     </section>
-    <footer class="footer text-center" style="transition: all ease 0.2s;padding: 2rem 0;">
-        <div class="container" style="padding: 2rem;"><a class="links small" href="https://github.com/anthonytedja/anthonytedja.github.io" style="z-index: 100 !important;display: inline-block;text-decoration: none;">Designed &amp; Built by Anthony Tedja<br><i class="fa fa-star-o" style="margin-right: 0.5rem;"></i><span id="github-stars" class="noselect">0</span><i class="fa fa-github-alt" style="margin: 0 1rem;"></i><i class="fa fa-code-fork" style="margin-right: 0.5rem;"></i><span id="github-forks" class="noselect">0</span></a></div><a class="js-scroll-trigger scroll-to-top links" href="#page-top" style="border-radius: 0.75rem;right: 22px;bottom: 22px;"><i class="fa fa-angle-up" style="animation: bounce 2s infinite;margin-top: 1.2rem;color: var(--scroll-color) !important;transition: all ease 0.2s;"></i></a>
+    <footer id="footer" class="text-center">
+        <div class="container p-4"><a class="links small" href="https://github.com/anthonytedja/anthonytedja.github.io" style="z-index: 100 !important;display: inline-block;text-decoration: none;">Designed &amp; Built by Anthony Tedja<br><i class="fa fa-star-o me-2"></i><span id="github-stars" class="noselect">0</span><i class="fa fa-github-alt mx-3"></i><i class="fa fa-code-fork me-2"></i><span id="github-forks" class="noselect">0</span></a></div><a class="js-scroll-trigger scroll-to-top links" href="#page-top" style="border-radius: 0.75rem;right: 22px;bottom: 22px;"><i class="fa fa-angle-up" style="animation: bounce 2s infinite;margin-top: 1.2rem;color: var(--scroll-color) !important;transition: all ease 0.2s;"></i></a>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
