@@ -30,7 +30,7 @@ if (!isTouchDevice && frontpage && fullname) {
 	}, thread;
 
 	let transform = function (xRot, yRot) {
-		fullname.css('transform', `rotateX(${yRot * 0.2}deg) rotateY(${xRot * 0.2}deg)`);
+		fullname.css('transform', `rotateX(${yRot * 0.4}deg) rotateY(${xRot * 0.4}deg)`);
 		fullname.css('filter', `drop-shadow(clamp(-8px, ${yRot * -0.5}px, 8px) clamp(-8px, ${xRot * 0.5}px, 8px) 0px var(--name-shadow))`);
 	}
 }
