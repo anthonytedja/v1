@@ -125,6 +125,7 @@
   color: var(--code-language-color);
   background-color: transparent;
   transition: all ease 0.2s;
+  cursor: url("../../assets/img/cursor/pointer.svg"), auto !important;
 }
 
 @media (hover: hover) {

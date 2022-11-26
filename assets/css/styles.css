@@ -53,12 +53,14 @@ body {
   font-family: "Poppins" !important;
   background-color: var(--main-bg-color) !important;
   transition: all ease 0.2s;
+  cursor: url("../../assets/img/cursor/cursor.svg"), auto;
 }
 
 a {
   color: var(--link-color);
   text-decoration: underline;
   transition: all ease 0.2s;
+  cursor: url("../../assets/img/cursor/pointer.svg"), auto !important;
 }
 
 a:hover {
@@ -67,6 +69,7 @@ a:hover {
 
 .links {
   transition: all ease 0.2s;
+  cursor: url("../../assets/img/cursor/pointer.svg"), auto !important;
 }
 
 .links:active {
