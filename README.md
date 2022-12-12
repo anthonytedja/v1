@@ -14,6 +14,7 @@
 - Google Analytics for Website Traffic Tracking
 - Dynamic Favicon matches Theme Settings
 - Mouseover for Moving Text Shadow
+- Custom Cursor for Cursor & Pointer Events
 
 ## Built With
 
