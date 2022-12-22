@@ -8,7 +8,7 @@ document.querySelector('#logo').addEventListener('click', function () {
 
 function light() {
 	document.documentElement.setAttribute('anthonytedja-data-theme', 'light');
-	$('#code-website-theme').text('"light"');
+	$('#code-website-theme').text('"masochist mode"');
 	setTimeout(() => {
 		$("#logo").attr("src", "/assets/img/light.svg");
 	}, 100);
@@ -18,7 +18,7 @@ function light() {
 
 function dark() {
 	document.documentElement.setAttribute('anthonytedja-data-theme', 'dark');
-	$('#code-website-theme').text('"dark"');
+	$('#code-website-theme').text('"midnight"');
 	setTimeout(() => {
 		$("#logo").attr("src", "/assets/img/dark.svg");
 	}, 100);
