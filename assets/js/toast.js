@@ -18,3 +18,19 @@ if (element) {
 
     setTimeout(() => toast.show(), 3000);
 }
+
+let element1 = document.getElementById('toast-1');
+let element2 = document.getElementById('codeblock-icon-js');
+let counter = 0;
+
+if (element1 && element2) {
+    const toast1 = new bootstrap.Toast(element1);
+    
+    element2.addEventListener('click', function (event) {
+        counter++;
+        if (counter > 2) {
+            $('#toast-paragraph-1').text("That doesn't do anything dummy");
+            toast1.show();
+        }
+    });
+}

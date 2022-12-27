@@ -271,13 +271,14 @@ a:hover {
   }
 }
 
-#toast {
+.toast {
   border-radius: 0.75rem;
   width: 375px;
   background-color: var(--toast-bg);
   border: 1px solid var(--toast-border);
   transition: all ease 0.2s;
   overflow: hidden;
+  margin-bottom: 0 !important;
 }
 
 .toast-header {
@@ -295,6 +296,12 @@ a:hover {
   transition: all ease 0.2s;
   -webkit-filter: var(--toast-close);
   filter: var(--toast-close);
+}
+
+.toast-container {
+  row-gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #profile-picture {
