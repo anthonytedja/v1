@@ -3,6 +3,7 @@
   --second-bg-color: #202020;
   --heading-color: #b0c4de;
   --main-text-color: #d4d4d4;
+  --selection-color: #fff;
   --scroll-color: #8CC8FF;
   --arrow-color: #F58f70;
   --bg-shade: soft-light;
@@ -28,6 +29,7 @@
   --second-bg-color: #f8f9fa;
   --heading-color: black;
   --main-text-color: #212529;
+  --selection-color: #212121;
   --scroll-color: #fff;
   --arrow-color: #212529;
   --bg-shade: normal;
@@ -85,6 +87,11 @@ a:hover {
   }
 }
 
+::selection {
+  background-color: var(--selection-color);
+  color: var(--main-bg-color);
+}
+
 .btn:active:focus {
   box-shadow: none;
 }
@@ -100,6 +107,16 @@ a:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.shown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 #frontpage {
@@ -137,7 +154,7 @@ a:hover {
   max-height: 2.8rem;
   filter: var(--logo-filter);
   transition: all ease 0.5s;
-  margin-left: 1em;
+  margin: 0 0.5rem;
 }
 
 @media (hover: hover) {
@@ -216,12 +233,17 @@ a:hover {
   }
 }
 
+#mainNav {
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
 #navbar-logo {
   margin-left: 0;
   margin-right: 0;
   font-weight: 600;
   color: var(--main-text-color) !important;
-  transition: all ease 0.2s;
+  transition: all ease 0.5s;
   padding: 0 0.5rem;
 }
 
@@ -258,8 +280,6 @@ a:hover {
   box-shadow: inset 0px 0px 5px 5000px var(--navbar-box);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  margin: 0.5rem;
-  border-radius: 10px;
   transition: all ease 0.2s;
 }
 

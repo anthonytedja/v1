@@ -43,8 +43,11 @@
 
 	// Scroll to top button appear
 	var scrollToTop = document.querySelector('.scroll-to-top');
+    var navbarlogo = document.querySelector('#navbar-logo');
+    var mainnav = document.querySelector('#mainNav');
+    var navbartoggle = document.querySelector('#navbartoggle');
 
-	if (scrollToTop) {
+	if (scrollToTop && navbarlogo && navbartoggle && mainnav) {
 
 		// Scroll to top button appear
 		window.addEventListener('scroll', function () {
@@ -52,12 +55,26 @@
 
 			if (scrollDistance > 100) {
 				//scrollToTop.style.display = 'block';
-                scrollToTop.style.opacity = 1;
-                scrollToTop.style.visibility = 'visible';
+                scrollToTop.classList.add("shown");
+                navbarlogo.classList.add("shown");
+                navbartoggle.classList.add("shown");
+                
+                scrollToTop.classList.remove("hidden");
+                navbarlogo.classList.remove("hidden");
+                navbartoggle.classList.remove("hidden");
+                
+                mainnav.classList.add("navbarblur");
 			} else {
 				//scrollToTop.style.display = 'none';
-                scrollToTop.style.opacity = 0;
-                scrollToTop.style.visibility = 'hidden';
+                scrollToTop.classList.add("hidden");
+                navbarlogo.classList.add("hidden");
+                navbartoggle.classList.add("hidden");
+                
+                scrollToTop.classList.remove("shown");
+                navbarlogo.classList.remove("shown");
+                navbartoggle.classList.remove("shown");
+                
+                mainnav.classList.remove("navbarblur");
 			}
 		});
 	}
