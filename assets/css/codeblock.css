@@ -82,6 +82,7 @@
   flex-grow: 1;
   overflow: hidden;
   display: flex;
+  position: relative;
 }
 
 .code-block {
@@ -161,5 +162,9 @@
 .code-json-f {
   color: var(--code-function-color);
   transition: all ease 0.2s;
+}
+
+#codeblock-icon-js {
+  border-bottom-left-radius: 0.5em;
 }
 

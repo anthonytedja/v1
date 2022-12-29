@@ -2,7 +2,7 @@
   display: inline-block;
   position: relative;
   text-align: left;
-  font-size: 70px;
+  font-size: clamp(2rem, 12vw + 1rem, 5rem);
 }
 
 .cd-words-wrapper b {
@@ -24,6 +24,8 @@
 .cd-headline.clip span {
   display: inline-block;
   padding: .2em 0;
+  color: var(--heading-color);
+  font-weight: 500;
 }
 
 .cd-headline.clip .cd-words-wrapper {

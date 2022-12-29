@@ -1,7 +1,7 @@
 (function () {
 	"use strict"; // Start of use strict
 
-	var mainNav = document.querySelector('#mainNav');
+	var mainNav = document.querySelector('.navbar');
 
 	if (mainNav) {
 
@@ -23,7 +23,7 @@
 				});
 			}
 
-			document.querySelector('#navbar-logo').addEventListener('click', function (event) {
+			document.querySelector('.navbar-brand').addEventListener('click', function (event) {
 				collapse.hide();
 			});
 			document.querySelector('.scroll-to-top').addEventListener('click', function (event) {
@@ -43,11 +43,10 @@
 
 	// Scroll to top button appear
 	var scrollToTop = document.querySelector('.scroll-to-top');
-    var navbarlogo = document.querySelector('#navbar-logo');
-    var mainnav = document.querySelector('#mainNav');
-    var navbartoggle = document.querySelector('#navbartoggle');
+    var navbarbrand = document.querySelector('.navbar-brand');
+    var navbartoggle = document.querySelector('.navbar-toggler');
 
-	if (scrollToTop && navbarlogo && navbartoggle && mainnav) {
+	if (scrollToTop && navbarbrand && navbartoggle) {
 
 		// Scroll to top button appear
 		window.addEventListener('scroll', function () {
@@ -56,25 +55,25 @@
 			if (scrollDistance > 100) {
 				//scrollToTop.style.display = 'block';
                 scrollToTop.classList.add("shown");
-                navbarlogo.classList.add("shown");
+                navbarbrand.classList.add("shown");
                 navbartoggle.classList.add("shown");
                 
                 scrollToTop.classList.remove("hidden");
-                navbarlogo.classList.remove("hidden");
+                navbarbrand.classList.remove("hidden");
                 navbartoggle.classList.remove("hidden");
                 
-                mainnav.classList.add("navbarblur");
+                mainNav.classList.add("navbarblur");
 			} else {
 				//scrollToTop.style.display = 'none';
                 scrollToTop.classList.add("hidden");
-                navbarlogo.classList.add("hidden");
+                navbarbrand.classList.add("hidden");
                 navbartoggle.classList.add("hidden");
                 
                 scrollToTop.classList.remove("shown");
-                navbarlogo.classList.remove("shown");
+                navbarbrand.classList.remove("shown");
                 navbartoggle.classList.remove("shown");
                 
-                mainnav.classList.remove("navbarblur");
+                mainNav.classList.remove("navbarblur");
 			}
 		});
 	}

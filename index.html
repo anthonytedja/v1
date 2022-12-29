@@ -74,42 +74,42 @@
 </head>
 
 <body id="page-top" ontouchstart="">
-    <div class="toast-container position-fixed p-4 bottom-0 end-0">
-        <div class="toast fade pulse animated hide" role="alert" id="toast-1" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header"><img class="me-2 rounded-circle noselect" src="assets/img/avatar.jpg" style="max-height: 2rem;"><strong class="me-auto fw-semibold">@anthonytedja</strong><small>just now</small><button class="btn-close ms-2 me-0 links" data-bs-dismiss="toast" aria-label="Close" type="button"></button></div>
+    <div class="toast-container">
+        <div class="toast fade pulse animated hide" role="alert" id="toast-message" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header"><img class="avatar noselect" src="assets/img/avatar.jpg"><strong class="me-auto fw-semibold">@anthonytedja</strong><small>just now</small><button class="btn-close links" data-bs-dismiss="toast" aria-label="Close" type="button"></button></div>
             <div class="toast-body" role="alert">
-                <p id="toast-paragraph-1" class="mt-2"></p>
+                <p id="toast-message-body"></p>
             </div>
         </div>
-        <div class="toast fade pulse animated hide" role="alert" id="toast" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header"><img class="me-2 rounded-circle noselect" src="assets/img/avatar.jpg" style="max-height: 2rem;"><strong class="me-auto fw-semibold">@anthonytedja</strong><small>just now</small><button class="btn-close ms-2 me-0 links" data-bs-dismiss="toast" aria-label="Close" type="button"></button></div>
+        <div class="toast fade pulse animated hide" role="alert" id="toast-welcome" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header"><img class="avatar noselect" src="assets/img/avatar.jpg"><strong class="me-auto fw-semibold">@anthonytedja</strong><small>just now</small><button class="btn-close links" data-bs-dismiss="toast" aria-label="Close" type="button"></button></div>
             <div class="toast-body" role="alert">
-                <p id="toast-paragraph" class="mt-2"></p>
+                <p id="toast-welcome-body"></p>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200" data-aos-once="true" id="mainNav">
-        <div class="container"><img id="logo" class="links noselect" src="assets/img/dark.svg" alt="logo" role="button"><a class="navbar-brand links hidden" id="navbar-logo" href="#page-top">@anthonytedja</a><button data-bs-toggle="collapse" class="navbar-toggler links hidden" data-bs-target="#navbarResponsive" id="navbartoggle" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" style="margin: 0.5rem 0;font-size: 1.8rem;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200" data-aos-once="true">
+        <div class="container"><img id="logo" class="links noselect" src="assets/img/dark.svg" alt="logo" role="button"><a class="navbar-brand links hidden" href="#page-top">@anthonytedja</a><button data-bs-toggle="collapse" class="navbar-toggler links hidden" data-bs-target="#navbar-items" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation" value="Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="my-2" style="font-size: 1.8rem;">
                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                     <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM64 256C64 238.3 78.33 224 96 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H96C78.33 288 64 273.7 64 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"></path>
                 </svg></button>
-            <div class="collapse navbar-collapse fw-semibold" id="navbarResponsive">
+            <div class="collapse navbar-collapse fw-semibold" id="navbar-items">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item nav-link me-2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true"><a class="nav-link links" href="#about">about</a></li>
-                    <li class="nav-item nav-link mx-2" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="400" data-aos-once="true"><a class="nav-link links" href="#projects">projects</a></li>
-                    <li class="nav-item nav-link ms-2" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="500" data-aos-once="true"><a class="nav-link links" href="#contact">contact</a></li>
+                    <li class="nav-item nav-link" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true"><a class="nav-link links" href="#about">about</a></li>
+                    <li class="nav-item nav-link" data-aos="fade-down" data-aos-duration="1100" data-aos-delay="400" data-aos-once="true"><a class="nav-link links" href="#projects">projects</a></li>
+                    <li class="nav-item nav-link" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="500" data-aos-once="true"><a class="nav-link links" href="#contact">contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <header class="d-flex content-section" id="frontpage">
-        <div class="container h-100" id="frontpage-content">
+        <div class="container h-100 text-block" id="frontpage-content">
             <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="text-start mb-0 fw-semibold">Hey there! I'm</p>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-                <h1 id="fullname" class="noselect text-start"><span class="name"><span>A</span><span>n</span><span>t</span><span>h</span><span>o</span><span>n</span><span>y</span></span>&nbsp;<span class="name"><span>T</span><span>e</span><span>d</span><span>j</span><span>a</span><span>.</span></span></h1>
+                <h1 id="fullname" class="noselect"><span class="name"><span>A</span><span>n</span><span>t</span><span>h</span><span>o</span><span>n</span><span>y</span></span>&nbsp;<span class="name"><span>T</span><span>e</span><span>d</span><span>j</span><span>a</span><span>.</span></span></h1>
             </div>
             <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="text-start mt-3 fw-semibold">Welcome to my page!</h2>
-            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" class="text-start mt-3 fw-semibold">I bug fixes.</p><a class="mt-3 mt-sm-2 py-2 links" href="#about" style="animation: bounce 2s infinite 2s;display: inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="-50" data-aos-delay="1300" data-aos-once="true" style="font-size: 3rem;color: var(--arrow-color) !important;">
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true" class="text-start mt-3 fw-semibold">I bug fixes.</p><a id="frontpage-chevron" class="links mt-sm-2" href="#about"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" data-aos="fade-down" data-aos-duration="1000" data-aos-offset="-50" data-aos-delay="1300" data-aos-once="true">
                     <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                     <path d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"></path>
                 </svg></a>
@@ -118,19 +118,19 @@
     <section id="about" class="content-section">
         <div class="container">
             <div class="caption v-middle text-center noselect">
-                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span class="noselect" style="color: var(--heading-color);font-weight: 500;">about.</span></strong></span></h1>
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span class="noselect">about.</span></strong></span></h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-1 p-0">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="400" data-aos-once="true" style="padding: 2rem;">
-                        <div class="noselect" style="display: flex;justify-content: center;"><img id="profile-picture" class="links" src="assets/img/guitar.png" alt="profile picture" role="button">
-                            <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" style="position: absolute;margin-left: 10rem;"><img id="hello" src="assets/img/hello.png" alt="hello speech bubble"></div>
+                        <div class="noselect d-flex justify-content-center position-relative"><img id="profile-picture" class="links" src="assets/img/guitar.png" alt="profile picture" role="button">
+                            <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" class="position-absolute" style="right: 15%;"><img id="hello" src="assets/img/hello.png" alt="hello speech bubble"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-2" style="padding: 0;">
-                    <div style="padding: 2rem;color: var(--main-text-color) !important;transition: all ease 0.2s;">
-                        <h2 class="display-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="700" data-aos-once="true" style="font-weight: 500;margin-bottom: 1rem;">🖐 hello world!</h2>
+                <div class="col-lg-6 order-lg-2 p-0">
+                    <div class="text-block">
+                        <h2 class="display-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="700" data-aos-once="true" style="font-weight: 500;">🖐 hello world!</h2>
                         <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="800" data-aos-once="true">Hey, I'm <strong>Anthony</strong>, a Computer Science Specialist at the University of Toronto 🎓, Software Developer 💼 at Alida and Technology Associate 💻 in the Math and Computer Science Society.</p>
                         <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="850" data-aos-once="true">Some of my interests are in Web Development 🌐, UX Design ✨ and Artificial Intelligence 🛸. A few technologies I have been working with recently are TypeScript React, Golang and OpenCV.</p>
                         <p data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="900" data-aos-once="true">Outside of the tech space, I enjoy playing guitar 🎸 as well as photography 📷. I'm most likely playing volleyball 🏐 or watching a kdrama 🎬 at the moment!</p>
@@ -143,7 +143,7 @@
         <div class="container">
             <div class="content-section-heading text-center noselect">
                 <div class="caption v-middle text-center">
-                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span class="noselect" style="color: var(--heading-color);font-weight: 500;">projects.</span></strong></span></h1>
+                    <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span class="noselect">projects.</span></strong></span></h1>
                 </div>
             </div>
             <div class="row g-0" id="projects-row">
@@ -151,7 +151,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>speakCV.&nbsp;<span style="color: var(--bs-yellow);">DeerHacks 2022 1st Place</span></h2>
-                                <p class="mb-0" style="font-size: 15px !important;">A desktop client that automates Zoom call actions with OpenCV.</p>
+                                <p>A desktop client that automates Zoom call actions with OpenCV.</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/speakCV.jpg" alt="speakCV project banner">
                     </a></div>
@@ -159,7 +159,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>DeerHacks</h2>
-                                <p class="mb-0" style="font-size: 15px !important;">Landing page for University of Toronto Mississauga MCSS Club's 2023 Hackathon.<br></p>
+                                <p>Landing page for University of Toronto Mississauga MCSS Club's 2023 Hackathon.<br></p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/deerhacks.jpg" alt="deerhacks project banner">
                     </a></div>
@@ -167,7 +167,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Notion</h2>
-                                <p class="mb-0" style="font-size: 15px !important;">A library of reversible widgets optimized for Notion.so pages.<br></p>
+                                <p>A library of reversible widgets optimized for Notion.so pages.<br></p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/notion.jpg" alt="notion project banner">
                     </a></div>
@@ -175,7 +175,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Mips</h2>
-                                <p class="mb-0" style="font-size: 15px !important;">Decompiles binary code into mips architecture assembly instructions.<br></p>
+                                <p>Decompiles binary code into mips architecture assembly instructions.<br></p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/mips.jpg" alt="mips project banner">
                     </a></div>
@@ -183,7 +183,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Scavenger</h2>
-                                <p class="mb-0" style="font-size: 15px !important;">Landing page for MCSS Club's 2022 Scavenger Hunt challenges.<br></p>
+                                <p>Landing page for MCSS Club's 2022 Scavenger Hunt challenges.<br></p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/scavenger.jpg" alt="scavenger project banner">
                     </a></div>
@@ -191,7 +191,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Restify</h2>
-                                <p class="mb-0" style="font-size: 15px !important;">Your go to food social media for all foodies and restaurant owners.<br></p>
+                                <p>Your go to food social media for all foodies and restaurant owners.<br></p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/restify.jpg" alt="restify project banner">
                     </a></div>
@@ -199,7 +199,7 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Bounce</h2>
-                                <p class="mb-0" style="font-size: 15px !important;">A bitmap assembly mini game driven by the MARS simulator.<br></p>
+                                <p>A bitmap assembly mini game driven by the MARS simulator.<br></p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/bounce.jpg" alt="bounce project banner">
                     </a></div>
@@ -207,11 +207,11 @@
                         <div class="caption">
                             <div class="caption-content">
                                 <h2>Arduino</h2>
-                                <p class="mb-0" style="font-size: 15px !important;">A library of Arduino projects for the ATmega328 microcontroller.<br></p>
+                                <p>A library of Arduino projects for the ATmega328 microcontroller.<br></p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/projects/arduino.jpg" alt="arduino project banner">
                     </a></div>
-                <div class="col" style="display: flex;justify-content: center;transition: all ease 0.2s;">
+                <div class="col d-flex justify-content-center">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-20" data-aos-delay="800" data-aos-once="true"><button class="btn btn-primary links" id="more-projects" type="button">more</button></div>
                 </div>
             </div>
@@ -220,15 +220,15 @@
     <section id="contact" class="content-section">
         <div class="container">
             <div class="caption v-middle text-center noselect">
-                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span class="noselect" style="color: var(--heading-color);font-weight: 500;">contact.</span></strong></span></h1>
+                <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="cd-headline clip"><span class="blc"></span><span class="cd-words-wrapper"><strong class="is-visible"><span class="noselect">contact.</span></strong></span></h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1" style="padding: 0;">
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="noselect" style="display: flex;justify-content: center;padding: 2rem;">
-                        <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" style="display: inline-block;max-height: 6rem;"><img id="click" src="assets/img/click.png" alt="click me pointing arrow"></div><img id="cat" class="links" src="assets/img/cat.gif" alt="animated cat" role="button">
+                <div class="col-lg-6 order-lg-1 p-0">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" class="noselect d-flex justify-content-center" style="padding: 2rem;">
+                        <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="800" class="d-inline-block" style="max-height: 6rem;"><img id="click" src="assets/img/click.png" alt="click me pointing arrow"></div><img id="cat" class="links" src="assets/img/cat.gif" alt="animated cat" role="button">
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-2" style="padding: 0;">
+                <div class="col-lg-6 order-lg-2 p-0">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-30" data-aos-delay="700" data-aos-once="true" style="padding: 2rem;">
                         <div class="code-window">
                             <div class="code-header">
@@ -236,10 +236,10 @@
                                 <div class="code-minimize-button"></div>
                                 <div class="code-expand-button"></div><span class="code-filename noselect">ShamelessPlug.js</span>
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true" class="code-container" style="position: relative;"><code class="code-block"><span class="code-json-f">{</span><br><span class="code-json-k">&nbsp;&nbsp;&nbsp;&nbsp;"theme"</span>:<span class="code-json-v">&nbsp;<span id="code-website-theme" class="code-json-v"></span></span>,<br><br><span class="code-json-k">&nbsp;&nbsp;&nbsp;&nbsp;"@anthonytedja"</span>:<span class="code-json-f">&nbsp;[</span><br><span class="code-json-v">&#9;"github"</span>,<br><span class="code-json-v">&#9;"linkedin"</span>,<br><span class="code-json-v">&#9;"instagram"</span>,<br><span>&#9;...you get it</span><br><span class="code-json-f">&nbsp;&nbsp;&nbsp;&nbsp;]</span><br><span class="code-json-f">}</span></code></div>
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800" data-aos-once="true" class="code-container"><code class="code-block"><span class="code-json-f">{</span><br><span class="code-json-k">&nbsp;&nbsp;&nbsp;&nbsp;"theme"</span>:<span class="code-json-v">&nbsp;<span id="code-website-theme" class="code-json-v"></span></span>,<br><br><span class="code-json-k">&nbsp;&nbsp;&nbsp;&nbsp;"@anthonytedja"</span>:<span class="code-json-f">&nbsp;[</span><br><span class="code-json-v">&#9;"github"</span>,<br><span class="code-json-v">&#9;"linkedin"</span>,<br><span class="code-json-v">&#9;"instagram"</span>,<br><span>&#9;...you get it</span><br><span class="code-json-f">&nbsp;&nbsp;&nbsp;&nbsp;]</span><br><span class="code-json-f">}</span></code></div>
                             <div class="code-footer">
                                 <ul class="code-languages">
-                                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" data-aos-delay="1000" data-aos-once="true" id="codeblock-icon-js" data-selected="" style="border-bottom-left-radius: 0.5em;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="links">
+                                    <li data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-50" data-aos-delay="1000" data-aos-once="true" id="codeblock-icon-js" data-selected=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="links">
                                             <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
                                             <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"></path>
                                         </svg></li>
@@ -277,8 +277,8 @@
             </div>
         </div>
     </section>
-    <footer id="footer" class="text-center">
-        <div class="container p-4"><a class="links small noselect" href="https://github.com/anthonytedja/anthonytedja.github.io" style="z-index: 100 !important;display: inline-block;text-decoration: none;">Designed &amp; Built by Anthony Tedja<br><i class="fa fa-star-o me-2"></i><span id="github-stars">0</span><i class="fa fa-github-alt mx-3"></i><i class="fa fa-code-fork me-2"></i><span id="github-forks">0</span></a></div><a class="js-scroll-trigger scroll-to-top links hidden" href="#page-top" style="border-radius: 0.75rem;right: 22px;bottom: 22px;display: block;"><i class="fa fa-angle-up" style="animation: bounce 2s infinite;margin-top: 1.2rem;color: var(--scroll-color) !important;transition: all ease 0.2s;"></i></a>
+    <footer>
+        <div class="container p-2 p-sm-3 p-lg-4"><a class="footer-body links small noselect" href="https://github.com/anthonytedja/anthonytedja.github.io">Designed &amp; Built by Anthony Tedja<br><i class="fa fa-star-o me-2"></i><span id="github-stars">0</span><i class="fa fa-github-alt mx-3"></i><i class="fa fa-code-fork me-2"></i><span id="github-forks">0</span></a></div><a class="scroll-to-top links hidden" href="#page-top"><i class="fa fa-angle-up"></i></a>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
