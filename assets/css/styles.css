@@ -15,7 +15,7 @@
   --name-hover: #f58f70;
   --name-shadow: #6d7989;
   --border-outline: #b0c4de;
-  --toast-bg: rgba(28, 28, 28, 0.85);
+  --toast-bg: rgba(28, 28, 28, 0.95);
   --toast-border: rgba(255, 255, 255, 0.1);
   --toast-border2: rgba(255, 255, 255, 0.05);
   --toast-close: invert(100%);
@@ -41,9 +41,9 @@
   --name-hover: #ff6db6;
   --name-shadow: #6d7989;
   --border-outline: #b0c4de;
-  --toast-bg: rgba(255, 255, 255, .85);
-  --toast-border: rgba(0, 0, 0, .1);
-  --toast-border2: rgba(0, 0, 0, .05);
+  --toast-bg: rgba(255, 255, 255, .95);
+  --toast-border: rgba(0, 0, 0, 0.1);
+  --toast-border2: rgba(0, 0, 0, 0.05);
   --toast-close: none;
   --navbar-box: rgba(0, 0, 0, 0.03);
   --hello-img-filter: invert(15%);
@@ -242,7 +242,7 @@ section:nth-last-of-type(odd) {
   margin-right: 0;
   font-weight: 600;
   color: var(--main-text-color) !important;
-  transition: all ease 0.5s;
+  transition: all ease 0.2s;
   padding: 0 0.5rem;
 }
 
