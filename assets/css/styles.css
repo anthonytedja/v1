@@ -50,6 +50,10 @@
   --click-img-filter: none;
 }
 
+html, body {
+  /*scroll-snap-type: y mandatory;*/
+}
+
 body {
   font-family: "Poppins" !important;
   background-color: var(--main-bg-color) !important;
@@ -98,6 +102,7 @@ a:hover {
 
 .noselect {
   -webkit-touch-callout: none;
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -144,6 +149,7 @@ section:nth-last-of-type(odd) {
   align-items: center;
   justify-content: center;
   transition: all ease 0.2s;
+  /*scroll-snap-align: start;*/
 }
 
 #logo {
@@ -319,6 +325,7 @@ section:nth-last-of-type(odd) {
 
 .toast-header .btn-close {
   transition: all ease 0.2s;
+  -webkit-filter: var(--toast-close);
   filter: var(--toast-close);
   margin-left: 0.5rem;
   margin-right: 0;
@@ -384,6 +391,7 @@ section:nth-last-of-type(odd) {
 @media (min-width: 992px) {
   .portfolio-item:hover .caption {
     background-color: rgba(0, 0, 0, 0.6);
+    -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
     opacity: 1;
     transition: all ease 0.2s;
@@ -400,6 +408,7 @@ section:nth-last-of-type(odd) {
 
 @media (min-width: 992px) {
   .portfolio-item:hover .img-fluid {
+    -webkit-filter: blur(5px);
     filter: blur(5px);
     transition: all ease 0.2s;
   }
