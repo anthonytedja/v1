@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	var toastTriggers = document.querySelectorAll('[data-bs-toggle="toast"]');
 
-	for (var toastTrigger of toastTriggers) {
+	for (let toastTrigger of toastTriggers) {
 		toastTrigger.addEventListener('click', function () {
 			var toastSelector = toastTrigger.getAttribute('data-bs-target');
 

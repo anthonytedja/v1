@@ -1,6 +1,6 @@
 # website
 
-[![Website Preview](assets/img/preview.jpg)](https://anthonytedja.me)
+[![Website Preview](assets/img/preview.jpg)](https://anthonytedja.com)
 
 > github pages hosted personal website.
 
