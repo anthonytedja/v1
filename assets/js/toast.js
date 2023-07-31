@@ -7,11 +7,21 @@ if (element) {
 
   if (Number.isInteger(visitCount)) {
     visitCount += 1;
-    let end = visitCount % 10;
+    const nth = function (d) {
+      if (d > 3 && d < 21) return "th";
+      switch (d % 10) {
+        case 1:
+          return "st";
+        case 2:
+          return "nd";
+        case 3:
+          return "rd";
+        default:
+          return "th";
+      }
+    };
     $("#toast-welcome-body").text(
-      `Hey! Welcome back for the ${visitCount}${
-        end === 1 ? "st" : end === 2 ? "nd" : end === 3 ? "rd" : "th"
-      } time :)`
+      `Hey! Welcome back for the ${visitCount}${nth(visitCount)} time :)`
     );
   } else {
     visitCount = 1;
