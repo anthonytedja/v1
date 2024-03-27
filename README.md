@@ -1,8 +1,8 @@
 # website
 
-[![Website Preview](assets/img/preview.jpg)](https://anthonytedja.com)
+[![Website Preview](assets/img/preview.jpg)](https://v1.anthonytedja.com)
 
-> github pages hosted personal website.
+> v1 personal website.
 
 ## Features
 
