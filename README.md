@@ -6,7 +6,6 @@
 
 ## Features
 
-- Possible Easter Eggs...
 - Scroll & Load Animations with [AOS library](https://github.com/michalsnik/aos)
 - JS Local Storage saves Theme Settings & Visitor Count
 - Google Analytics for Website Traffic Tracking

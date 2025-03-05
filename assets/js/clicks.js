@@ -34,7 +34,7 @@ $('#profile-picture').click(function () {
 });
 
 $('#codeblock-icon-email').click(function () {
-	window.location.href = "mailto:anthony.tedja@mail.utoronto.ca";
+	window.location.href = "mailto:anthony.tedja@alumni.utoronto.ca";
 });
 
 $('#codeblock-icon-github').click(function () {
